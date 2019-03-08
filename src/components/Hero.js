@@ -38,7 +38,6 @@ const Wrapper = styled.section`
   @media screen and (min-width: 580px) {
     .hero-section {
       top: 23%;
-
     }
     .me {
       max-width: 240px;
