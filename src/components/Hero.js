@@ -16,25 +16,26 @@ const Wrapper = styled.section`
     left: 0;
     right: 0;
     color: ${primaryTextColor};
- 
+
     span {
-      font-size: calc(2.5em + 1vw); 
+      font-size: calc(2.5em + 1vw);
       font-weight: bold;
       display: block;
 
       &:nth-child(2) {
-      font-size: calc(1.2em + 1vw); 
-      margin: 10px 0 30px 0;
+        font-size: calc(1.2em + 1vw);
+        margin: 10px 0 30px 0;
+      }
     }
   }
 
   .me {
     border-radius: 50%;
     box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
-    max-width: 180px; 
+    max-width: 180px;
     max-height: 180px;
   }
-  
+
   @media screen and (min-width: 580px) {
     .hero-section {
       top: 23%;
@@ -44,7 +45,7 @@ const Wrapper = styled.section`
       max-height: 240px;
     }
     span {
-      font-size: calc(3em + 1vw); 
+      font-size: calc(3em + 1vw);
       &:nth-child(2) {
         font-size: calc(2em + 1vw);
       }
@@ -52,9 +53,9 @@ const Wrapper = styled.section`
   }
   @media screen and (min-width: 992px) {
     span {
-      font-size: calc(4em + 1vw); 
+      font-size: calc(4em + 1vw);
       &:nth-child(2) {
-        font-size: calc(3em + 1vw); 
+        font-size: calc(3em + 1vw);
       }
     }
   }

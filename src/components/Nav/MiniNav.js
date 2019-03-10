@@ -4,8 +4,8 @@ import { white } from '../../colors';
 import NavLinks from './NavLinks';
 
 const mobileBGColor = 'rgb(31, 31, 31)';
-const Nav = styled.div`
-  .mobile-menu-container {
+const Nav = styled.nav`
+  .mobile-menu {
     background-color: ${mobileBGColor};
     display: none;
     position: fixed;
@@ -14,42 +14,40 @@ const Nav = styled.div`
     border-radius: 50%;
     z-index: 2;
 
-    .mobile-menu {
-      button {
-        background-color: ${mobileBGColor};
-        height: 57px;
-        width: 57px;
-        position: fixed;
-        bottom: 14px;
-        right: 14px;
-        z-index: 1;
-        border-color: ${mobileBGColor};
-        border-radius: 50%;
-        padding: 0px;
-        &:focus {
-          outline: none;
-        }
+    button {
+      background-color: ${mobileBGColor};
+      height: 57px;
+      width: 57px;
+      position: fixed;
+      bottom: 14px;
+      right: 14px;
+      z-index: 1;
+      border-color: ${mobileBGColor};
+      border-radius: 50%;
+      padding: 0px;
+      &:focus {
+        outline: none;
       }
-      ul {
-        list-style-type: none;
-        margin: 0.2em 0px;
-        visibility: hidden;
-        position: fixed;
-        right: 20px;
-        bottom: 55px;
-        z-index: 1;
-        transform: translateY(10px);
-        transition: transform 0.5s ease-in-out 0s;
-        li {
-          text-align: right;
-          margin: 15px 0px;
-          a {
-            color: ${white};
-            text-transform: uppercase;
-            text-decoration: none;
-            opacity: 0;
-            transition: opacity 0.7s ease-in-out 0s;
-          }
+    }
+    ul {
+      list-style-type: none;
+      margin: 0.2em 0px;
+      visibility: hidden;
+      position: fixed;
+      right: 20px;
+      bottom: 55px;
+      z-index: 1;
+      transform: translateY(10px);
+      transition: transform 0.5s ease-in-out 0s;
+      li {
+        text-align: right;
+        margin: 15px 0px;
+        a {
+          color: ${white};
+          text-transform: uppercase;
+          text-decoration: none;
+          opacity: 0;
+          transition: opacity 0.7s ease-in-out 0s;
         }
       }
     }
@@ -63,7 +61,7 @@ const Nav = styled.div`
     }
 
     &.open {
-      .mobile-menu ul {
+      ul {
         visibility: visible;
         transform: translateY(0px);
         li a {
@@ -131,7 +129,7 @@ const Nav = styled.div`
   }
 
   @media only screen and (max-width: 1023px) {
-    .mobile-menu-container {
+    .mobile-menu {
       display: block;
     }
   }
@@ -139,7 +137,7 @@ const Nav = styled.div`
 
 const MiniNav = () => {
   const handleClick = () => {
-    const [elem] = document.getElementsByClassName('mobile-menu-container');
+    const [elem] = document.getElementsByClassName('mobile-menu');
     const [elem2] = document.getElementsByClassName('line');
     elem.classList.toggle('open');
     elem2.classList.toggle('open');
@@ -147,18 +145,16 @@ const MiniNav = () => {
 
   return (
     <Nav>
-      <div className="mobile-menu-container">
-        <nav className="mobile-menu">
-          <NavLinks />
-          <button onClick={() => handleClick()}>
-            <div className="line">
-              <span />
-              <span />
-              <span />
-              <span />
-            </div>
-          </button>
-        </nav>
+      <div className="mobile-menu">
+        <NavLinks />
+        <button onClick={() => handleClick()}>
+          <div className="line">
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
+        </button>
         <div className="circle" />
       </div>
     </Nav>
