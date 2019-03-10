@@ -130,7 +130,8 @@ const Nav = styled.nav`
     }
   }
 
-  @media only screen and (max-width: 1023px) {
+  @media only screen and (max-width: 768px),
+    screen and (max-height: 420px) and (orientation: landscape) {
     .mobile-menu {
       display: block;
     }

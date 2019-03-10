@@ -55,6 +55,15 @@ const Nav = styled.nav`
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  /* for devices in landscape mode */
+  @media only screen and (max-height: 420px) and (orientation: landscape) {
+    display: none;
+  }
 `;
 
 const Navbar = () => {

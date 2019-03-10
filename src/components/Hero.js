@@ -59,6 +59,19 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  /* for devices in landscape mode */
+  @media only screen and (max-width: 900px) and (orientation: landscape) {
+    .me {
+      max-width: 140px;
+    }
+  }
+  /* for xs devices in landscape mode */
+  @media only screen and (max-width: 600px) and (orientation: landscape) {
+    .me {
+      max-width: 100px;
+    }
+  }
 `;
 const Hero = () => {
   return (
