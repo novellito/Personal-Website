@@ -27,6 +27,7 @@ const Nav = styled.nav`
       padding: 0px;
       &:focus {
         outline: none;
+        border: none;
       }
     }
     ul {
@@ -58,6 +59,7 @@ const Nav = styled.nav`
       width: 45px;
       border-radius: 50%;
       transition: all 0.3s ease-in-out 0s;
+      box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
     }
 
     &.open {
