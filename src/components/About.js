@@ -1,9 +1,10 @@
 import React from 'react';
 import xtian from '../assets/xtian.png';
-import resume from '../assets/christianTrinidad_Resume2018.pdf';
+
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
-import { blueSecondary, white } from '../colors';
+import { AboutLinks, ResumeBtn } from './AboutLinks';
+import { bluePrimary, blueSecondary, white } from '../colors';
 const Wrapper = styled.section`
   padding: 60px 0 60px 0;
   background: ${blueSecondary};
@@ -22,60 +23,85 @@ const Wrapper = styled.section`
     .right {
       color: ${white};
       /* font-family: 'Open Sans', sans-serif; */
-      .personalLinks {
-        display: flex;
-        align-items: center;
-        a {
-          &:nth-child(2) {
-            margin: 0 10px;
-          }
-          i {
-            font-size: 2.2em;
-            color: ${white};
-            &:hover {
-              color: #00a0ff;
-              transition: 0.3s;
-            }
-            &.fa-download {
-              font-size: 1.2em;
-              &:hover {
-                color: ${blueSecondary};
-              }
-            }
-          }
+      h3 {
+        font-size: 1.3em;
+        margin: 0 0 5px 0;
+      }
+      p {
+        margin-top: 0;
+      }
+
+      .resume-btn {
+        cursor: pointer;
+        background-color: ${blueSecondary};
+        color: ${white};
+        margin-left: auto;
+        text-decoration: none;
+        font-size: 0.8em;
+        font-weight: 600;
+        padding: 1em 2em;
+        border: 1.3px solid ${white};
+        border-radius: 100px;
+        &:hover {
+          background: ${white};
+          transition: 0.3s;
+          color: ${blueSecondary};
         }
-        .resume-btn {
-          cursor: pointer;
-          background-color: ${blueSecondary};
-          color: ${white};
-          margin-left: auto;
-          text-decoration: none;
-          font-size: 0.8em;
-          padding: 1.1em 2em;
-          border: 1.3px solid ${white};
-          border-radius: 100px;
-          &:hover {
-            background: ${white};
-            transition: 0.3s;
-            color: ${blueSecondary};
-          }
-          /* @media screen and (min-width: 992px) {
+
+        /* @media screen and (min-width: 992px) {
             float: right;
           } */
-        }
       }
       @media screen and (min-width: 660px) {
         text-align: left;
         padding: 0;
       }
       @media screen and (min-width: 992px) {
-        padding-right: 10%;
         font-size: 1.1em;
       }
+
+      .mobile-resume {
+        text-align: center;
+        margin-top: 25px;
+      }
     }
-    @media screen and (min-width: 992px) {
+    .personalLinks {
+      .res-1 {
+        display: none;
+      }
+      /* } */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        &:nth-child(2) {
+          margin: 0 10px;
+        }
+        i {
+          font-size: 2.2em;
+          color: ${white};
+          &:hover {
+            color: ${bluePrimary};
+            transition: 0.3s;
+          }
+          &.fa-download {
+            font-size: 1.2em;
+            color: inherit;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+
+    @media screen and (min-width: 768px) {
       grid-template-columns: 1fr 3fr;
       grid-gap: 10%;
+      .personalLinks .res-1 {
+        display: block;
+      }
+      .mobile-resume {
+        display: none;
+      }
     }
   }
 `;
@@ -98,54 +124,12 @@ const About = props => {
               enjoy playing basketball, listening to music, and growing my
               sneaker collection.
             </p>
-            <div className="personalLinks">
-              <a
-                href="https://github.com/novellito"
-                target="_blank"
-                alt="my github"
-                rel="noopener noreferrer"
-              >
-                <i
-                  className="fa fa-github "
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="View my GitHub"
-                />
-              </a>
-              <a
-                href="mailto:cntrinidad@gmail.com"
-                alt="email me"
-                rel="noopener noreferrer"
-              >
-                <i
-                  className="fa fa-envelope"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="Email Me"
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/christian-trinidad07/"
-                alt="my linked in"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  className="fa fa-linkedin-square social-ink"
-                  data-toggle="tooltip"
-                  data-placement="top"
-                  title="View my LinkedIn"
-                  rel="noopener noreferrer"
-                />
-              </a>
-              <a
-                className="resume-btn"
-                href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-download" /> Download Résumé (PDF)
-              </a>
+            <div className="personalLinks ">
+              <AboutLinks />
+              <ResumeBtn classname="res-1" />
+            </div>
+            <div className="mobile-resume">
+              <ResumeBtn />
             </div>
           </div>
         </div>
