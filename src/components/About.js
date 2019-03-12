@@ -22,13 +22,18 @@ const Wrapper = styled.section`
     }
     .right {
       color: ${white};
+      text-align: center;
       /* font-family: 'Open Sans', sans-serif; */
       h3 {
         font-size: 1.3em;
         margin: 0 0 5px 0;
+        /* width: 75%;
+    margin: 0 auto; */
       }
       p {
         margin-top: 0;
+        /* width: 75%;
+    margin: 0 auto; */
       }
 
       .resume-btn {
@@ -47,18 +52,8 @@ const Wrapper = styled.section`
           transition: 0.3s;
           color: ${blueSecondary};
         }
-
-        /* @media screen and (min-width: 992px) {
-            float: right;
-          } */
       }
-      @media screen and (min-width: 660px) {
-        text-align: left;
-        padding: 0;
-      }
-      @media screen and (min-width: 992px) {
-        font-size: 1.1em;
-      }
+      /* text-align: left; */
 
       .mobile-resume {
         text-align: center;
@@ -66,13 +61,13 @@ const Wrapper = styled.section`
       }
     }
     .personalLinks {
-      .res-1 {
-        display: none;
-      }
-      /* } */
       display: flex;
       align-items: center;
       justify-content: center;
+      /* hide first resume btn on mobile view */
+      .res-1 {
+        display: none;
+      }
       a {
         &:nth-child(2) {
           margin: 0 10px;
@@ -93,14 +88,21 @@ const Wrapper = styled.section`
       }
     }
 
-    @media screen and (min-width: 768px) {
+    /* media queries for .about-contents */
+    @media screen and (min-width: 992px) {
       grid-template-columns: 1fr 3fr;
       grid-gap: 10%;
       .personalLinks .res-1 {
         display: block;
       }
+      /* hide 2nd resume btn on desktops */
       .mobile-resume {
         display: none;
+      }
+
+      .right {
+        font-size: 1.1em;
+        text-align: left;
       }
     }
   }
