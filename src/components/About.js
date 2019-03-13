@@ -1,10 +1,13 @@
 import React from 'react';
 import xtian from '../assets/xtian.png';
+import resume from '../assets/christianTrinidad_Resume2018.pdf';
 
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
-import { AboutLinks, ResumeBtn } from './AboutLinks';
+import AboutLinks from './AboutLinks';
 import { bluePrimary, blueSecondary, white } from '../colors';
+import Button from './DefaultBtn';
+
 const Wrapper = styled.section`
   padding: 60px 0 60px 0;
   background: ${blueSecondary};
@@ -23,38 +26,13 @@ const Wrapper = styled.section`
     .right {
       color: ${white};
       text-align: center;
-      /* font-family: 'Open Sans', sans-serif; */
       h3 {
         font-size: 1.3em;
         margin: 0 0 5px 0;
-        /* width: 75%;
-    margin: 0 auto; */
       }
       p {
         margin-top: 0;
-        /* width: 75%;
-    margin: 0 auto; */
       }
-
-      .resume-btn {
-        cursor: pointer;
-        background-color: ${blueSecondary};
-        color: ${white};
-        margin-left: auto;
-        text-decoration: none;
-        font-size: 0.8em;
-        font-weight: 600;
-        padding: 1em 2em;
-        border: 1.3px solid ${white};
-        border-radius: 100px;
-        &:hover {
-          background: ${white};
-          transition: 0.3s;
-          color: ${blueSecondary};
-        }
-      }
-      /* text-align: left; */
-
       .mobile-resume {
         text-align: center;
         margin-top: 25px;
@@ -99,7 +77,6 @@ const Wrapper = styled.section`
       .mobile-resume {
         display: none;
       }
-
       .right {
         font-size: 1.1em;
         text-align: left;
@@ -128,10 +105,27 @@ const About = props => {
             </p>
             <div className="personalLinks ">
               <AboutLinks />
-              <ResumeBtn classname="res-1" />
+              <Button
+                btnColor={blueSecondary}
+                classname="res-1"
+                href={resume}
+                content={
+                  <>
+                    <i className="fa fa-download" /> Download Résumé (PDF)
+                  </>
+                }
+              />
             </div>
             <div className="mobile-resume">
-              <ResumeBtn />
+              <Button
+                btnColor={blueSecondary}
+                href={resume}
+                content={
+                  <>
+                    <i className="fa fa-download" /> Download Résumé (PDF)
+                  </>
+                }
+              />
             </div>
           </div>
         </div>

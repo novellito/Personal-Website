@@ -1,5 +1,4 @@
 import React from 'react';
-import resume from '../assets/christianTrinidad_Resume2018.pdf';
 
 const AboutLinks = () => (
   <>
@@ -45,16 +44,4 @@ const AboutLinks = () => (
   </>
 );
 
-const ResumeBtn = prop => (
-  <>
-    <a
-      className={'resume-btn ' + prop.classname}
-      href={resume}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i className="fa fa-download" /> Download Résumé (PDF)
-    </a>
-  </>
-);
-export { AboutLinks, ResumeBtn };
+export default AboutLinks;
