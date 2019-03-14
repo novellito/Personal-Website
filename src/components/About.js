@@ -1,7 +1,10 @@
 import React from 'react';
-import xtian from '../assets/xtian.png';
+import me1 from '../assets/surface.png';
+import me2 from '../assets/xtian.jpg';
+import me3 from '../assets/grad.jpg';
 import resume from '../assets/christianTrinidad_Resume2018.pdf';
-
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
 import AboutLinks from './AboutLinks';
@@ -16,6 +19,7 @@ const Wrapper = styled.section`
     .left {
       margin: auto;
       .xtian {
+        object-fit: cover;
         width: 165px;
         height: 165px;
         margin-bottom: 10%;
@@ -82,6 +86,10 @@ const Wrapper = styled.section`
         text-align: left;
       }
     }
+
+    .carousel .slide {
+      background: none;
+    }
   }
 `;
 const About = props => {
@@ -90,9 +98,21 @@ const About = props => {
       <Container>
         <div className="about-contents">
           <div className="left">
-            <img className="xtian" src={xtian} alt="images of christian" />
+            <Carousel
+              showArrows={false}
+              showStatus={false}
+              showIndicators={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              showThumbs={false}
+              width="170px"
+            >
+              <img className="xtian" alt="me holding a laptop" src={me1} />
+              <img className="xtian" alt="me in new york" src={me2} />
+              <img className="xtian" alt="me at graduation" src={me3} />
+            </Carousel>
           </div>
-          <div className="right ">
+          <div className="right">
             <h3>About Me</h3>
             <p>
               I'm an undergraduate student studying computer science at
