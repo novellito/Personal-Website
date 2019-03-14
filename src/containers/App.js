@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
 import About from '../components/About';
+import Experience from '../components/Experience';
 class App extends Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends Component {
         <Navbar />
         <Hero />
         <About />
+        <Experience />
       </div>
     );
   }
