@@ -19,40 +19,40 @@ import {
 
 const Wrapper = styled.section`
   background: ${blueTertiary};
-
   .vertical-timeline::before {
     top: unset;
   }
-
   h1 {
     color: ${primaryTextColor};
     margin-top: 0;
     padding-top: 2em;
   }
-
   .vertical-timeline-element-icon {
-    justify-content: center;
-    display: flex;
+    background: ${white};
+    box-shadow: 0 0 0 4px #fff, inset 0 0px 0 rgba(0, 0, 0, 0.08),
+      0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
-
   .nbc {
-    width: 85%;
-    margin-top: auto;
+    width: 100%;
+    position: relative;
+    top: 7px;
   }
-
   .csun {
     width: 100%;
   }
-
   .lees {
-    width: 50px;
-    height: 35px;
+    width: 30px;
+    height: 25px;
     position: relative;
-    top: 10px;
+    top: 5px;
   }
-
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
+    .lees {
+      width: 50px;
+      height: 35px;
+      top: 10px;
+    }
     .vertical-timeline--two-columns
       .vertical-timeline-element-content
       .vertical-timeline-element-date {
@@ -69,6 +69,7 @@ const Wrapper = styled.section`
     }
   }
 `;
+
 const Experience = props => {
   return (
     <Wrapper>
@@ -77,7 +78,6 @@ const Experience = props => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="July 2018 - present"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={nbc} alt="" className="nbc" />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -92,7 +92,6 @@ const Experience = props => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="August 2014 - May 2018"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -104,7 +103,6 @@ const Experience = props => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="April 2017 - July 2017"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -118,7 +116,6 @@ const Experience = props => {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="March 2014 - April 2017"
-          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
           <h3 className="vertical-timeline-element-title">Web Developer</h3>
@@ -130,7 +127,6 @@ const Experience = props => {
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="March 2014 - April 2017"
-          iconStyle={{ background: 'white', color: '#fff' }}
           icon={<img src={lees} alt="" className="lees" />}
         >
           <h3 className="vertical-timeline-element-title">Store Supervisor</h3>
