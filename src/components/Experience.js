@@ -80,8 +80,10 @@ const Experience = props => {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={nbc} alt="" className="nbc" />}
         >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+          <h3 className="vertical-timeline-element-title">
+            Media Tech Associate
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">NY / LA</h4>
           <p>
             Creative Direction, User Experience, Visual Design, Project
             Management, Team Leading
@@ -89,18 +91,15 @@ const Experience = props => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 2017 - May 2018"
+          date="August 2014 - May 2018"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
+          <h3 className="vertical-timeline-element-title">
+            BS in Computer Science
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">CSU Northridge</h4>
+          <p>Deans List Fall 2014 - Spring 2018 • GPA: 3.6 (Cum Laude)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -108,9 +107,11 @@ const Experience = props => {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h3 className="vertical-timeline-element-title">
+            Web Developer & Tech Support Specialist
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
+            CSUN Distance Learning Center
           </h4>
           <p>User Experience, Visual Design</p>
         </VerticalTimelineElement>
@@ -120,9 +121,9 @@ const Experience = props => {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<img src={csun} alt="" className="csun" />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
+          <h3 className="vertical-timeline-element-title">Web Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
+            CSUN Career Center
           </h4>
           <p>User Experience, Visual Design</p>
         </VerticalTimelineElement>
@@ -132,10 +133,10 @@ const Experience = props => {
           iconStyle={{ background: 'white', color: '#fff' }}
           icon={<img src={lees} alt="" className="lees" />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Content Marketing for Web, Mobile and Social Media
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
+          <h3 className="vertical-timeline-element-title">Store Supervisor</h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Lake Balboa, CA
+          </h4>
           <p>Strategy, Social Media</p>
         </VerticalTimelineElement>
       </VerticalTimeline>
