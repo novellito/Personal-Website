@@ -19,6 +19,8 @@ import {
 
 const Wrapper = styled.section`
   background: ${blueTertiary};
+  padding-bottom: 4em;
+
   .vertical-timeline::before {
     top: unset;
   }
@@ -102,7 +104,7 @@ const Experience = props => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="April 2017 - July 2017"
+          date="April 2017 - May 2018"
           icon={<img src={csun} alt="" className="csun" />}
         >
           <h3 className="vertical-timeline-element-title">
@@ -115,7 +117,7 @@ const Experience = props => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="March 2014 - April 2017"
+          date="April 2017 - July 2017"
           icon={<img src={csun} alt="" className="csun" />}
         >
           <h3 className="vertical-timeline-element-title">Web Developer</h3>
