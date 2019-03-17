@@ -127,6 +127,7 @@ const About = props => {
               <AboutLinks />
               <Button
                 btnColor={blueSecondary}
+                borderColor={white}
                 classname="res-1"
                 href={resume}
                 content={
@@ -139,6 +140,7 @@ const About = props => {
             <div className="mobile-resume">
               <Button
                 btnColor={blueSecondary}
+                borderColor={white}
                 href={resume}
                 content={
                   <>

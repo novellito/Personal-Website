@@ -11,9 +11,10 @@ import '../assets/Devicons/devicon.css';
 import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
 import sel from '../assets/selenium.png';
+import Button from './DefaultBtn';
 
 const Wrapper = styled.section`
-  padding: 3rem 6.5rem;
+  padding: 3rem 1.5rem;
   padding-bottom: 4rem;
   background: ${bluePrimary};
   .skills-card {
@@ -21,44 +22,65 @@ const Wrapper = styled.section`
     border-radius: 35px;
     box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #e6ecf8;
     color: ${primaryTextColor};
-    padding: 1.25em;
+    padding: 2.25em;
+    padding-bottom: 6em;
+    margin-top: -9em;
+    h3:nth-of-type(3) {
+      margin-bottom: 0;
+    }
   }
 
   .colored {
-    font-size: 60px;
-    margin: 0px;
+    font-size: 4em;
+    margin: 7px;
+  }
+
+  .projects-btn {
+    position: relative;
+    top: 30px;
   }
 
   .dev {
-    img {
-      width: 80px;
-      height: 80px;
-      padding-bottom: 20px;
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 25px;
-  }
 
-  @media screen and (min-width: 321px) {
-    .colored {
-      font-size: 60px;
-      margin: 0px 15px 0px 15px;
+    img {
+      height: 80px;
+      &.vscode {
+        height: 70px;
+      }
+      &.selenium {
+        width: 120px;
+      }
     }
   }
 
-  @media screen and (min-width: 576px) {
+  @media screen and (min-width: 1120px) {
+    padding: 3rem 5.5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 3rem 21.5rem;
     .main-tech {
       margin: 40px 0px 0px 0px;
     }
     .colored {
-      font-size: 80px;
+      font-size: 5em;
       margin: 0px 15px 0px 15px;
     }
     .dev {
       margin: auto;
       img {
-        width: 100px;
-        height: 100px;
-        padding-bottom: 20px;
+        height: 92px;
+        &.vscode {
+          height: 80px;
+          margin-left: 0;
+        }
+        &.selenium {
+          width: 130px;
+        }
       }
     }
   }
@@ -69,30 +91,37 @@ const Skills = props => {
     <Wrapper>
       <div className="skills-card">
         <h1>Skills</h1>
+        <h3>Frontend</h3>
         <div className="dev">
-          <h3>Frontend</h3>
           <i className="devicon-react-original colored" />
           <i className="devicon-angularjs-plain colored" />
           <i className="devicon-html5-plain colored" />
           <i className="devicon-sass-plain colored" />
           <i className="devicon-jquery-plain colored" />
         </div>
+        <h3>Backend</h3>
         <div className="dev ">
-          <h3>Backend</h3>
           <i className="devicon-nodejs-plain colored" />
           <i className="devicon-mongodb-plain colored" />
           <i className="devicon-java-plain colored" />
+          <i className="devicon-mysql-plain colored" />
           <i className="devicon-python-plain colored" />
           <i className="devicon-php-plain colored" />
-          <i className="devicon-mysql-plain colored" />
         </div>
-        <div className="dev ">
-          <h3>Tools</h3>
-          <img src={vscode} alt="vscode" />
-          <img src={sel} alt="selenium" />
+        <h3>Tools</h3>
+        <div className="dev">
           <i className="devicon-github-plain colored" />
           <i className="devicon-docker-plain colored" />
+          <img src={vscode} className="vscode" alt="vscode" />
+          <img src={sel} className="selenium" alt="selenium" />
         </div>
+        <Button
+          btnColor={white}
+          // href={resume}
+          borderColor={blueSecondary}
+          classname="projects-btn"
+          content={<>View Projects</>}
+        />
       </div>
     </Wrapper>
   );

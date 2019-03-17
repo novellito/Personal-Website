@@ -19,10 +19,11 @@ import {
 
 const Wrapper = styled.section`
   background: ${blueTertiary};
-  padding-bottom: 4em;
+  padding-bottom: 6em;
 
   .vertical-timeline::before {
     top: unset;
+    height: 81%;
   }
   h1 {
     color: ${primaryTextColor};
