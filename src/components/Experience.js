@@ -29,6 +29,10 @@ const Wrapper = styled.section`
     color: ${primaryTextColor};
     margin-top: 0;
     padding-top: 2em;
+    font-size: 1.75em;
+  }
+  .vertical-timeline {
+    margin: 1em auto;
   }
   .vertical-timeline-element-icon {
     background: ${white};
@@ -55,6 +59,9 @@ const Wrapper = styled.section`
       width: 50px;
       height: 35px;
       top: 10px;
+    }
+    .vertical-timeline.vertical-timeline--two-columns {
+      margin-top: 0;
     }
     .vertical-timeline--two-columns
       .vertical-timeline-element-content

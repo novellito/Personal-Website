@@ -6,6 +6,7 @@ import MiniNav from '../components/Nav/MiniNav';
 import About from '../components/About';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills';
+import Footer from '../components/Footer';
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
         <About />
         <Experience />
         <Skills />
+        <Footer />
       </div>
     );
   }

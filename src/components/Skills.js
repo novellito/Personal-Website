@@ -25,28 +25,37 @@ const Wrapper = styled.section`
     padding: 2.25em;
     padding-bottom: 6em;
     margin-top: -9em;
-    h3:nth-of-type(3) {
-      margin-bottom: 0;
+    p {
+      color: #5a5d7adb;
+      font-weight: 600;
+      &:nth-of-type(3) {
+        margin-bottom: 0;
+      }
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 0;
     }
   }
-
+  i {
+    font-size: 1.2em;
+    color: inherit;
+    margin-right: 5px;
+  }
   .colored {
     font-size: 4em;
     margin: 7px;
   }
-
   .projects-btn {
     position: relative;
     top: 30px;
   }
-
   .dev {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 25px;
-
     img {
       height: 80px;
       &.vscode {
@@ -63,6 +72,7 @@ const Wrapper = styled.section`
   }
   @media screen and (min-width: 1200px) {
     padding: 3rem 21.5rem;
+    padding-bottom: 5em;
     .main-tech {
       margin: 40px 0px 0px 0px;
     }
@@ -91,7 +101,7 @@ const Skills = props => {
     <Wrapper>
       <div className="skills-card">
         <h1>Skills</h1>
-        <h3>Frontend</h3>
+        <p>Frontend</p>
         <div className="dev">
           <i className="devicon-react-original colored" />
           <i className="devicon-angularjs-plain colored" />
@@ -99,7 +109,7 @@ const Skills = props => {
           <i className="devicon-sass-plain colored" />
           <i className="devicon-jquery-plain colored" />
         </div>
-        <h3>Backend</h3>
+        <p>Backend</p>
         <div className="dev ">
           <i className="devicon-nodejs-plain colored" />
           <i className="devicon-mongodb-plain colored" />
@@ -108,7 +118,7 @@ const Skills = props => {
           <i className="devicon-python-plain colored" />
           <i className="devicon-php-plain colored" />
         </div>
-        <h3>Tools</h3>
+        <p>Tools</p>
         <div className="dev">
           <i className="devicon-github-plain colored" />
           <i className="devicon-docker-plain colored" />
@@ -120,7 +130,12 @@ const Skills = props => {
           // href={resume}
           borderColor={blueSecondary}
           classname="projects-btn"
-          content={<>View Projects</>}
+          content={
+            <>
+              <i className="fa fa-code" />
+              View Projects
+            </>
+          }
         />
       </div>
     </Wrapper>
