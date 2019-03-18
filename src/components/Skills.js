@@ -6,7 +6,6 @@ import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
 import sel from '../assets/selenium.png';
 import Button from './DefaultBtn';
-import Link from 'react-router-dom';
 
 const Wrapper = styled.section`
   padding: 3rem 1.5rem;
@@ -84,7 +83,7 @@ const Wrapper = styled.section`
 
 const Skills = props => {
   return (
-    <Wrapper>
+    <Wrapper id="skillSection">
       <div className="skills-card">
         <h1>Skills</h1>
         <p>Frontend</p>

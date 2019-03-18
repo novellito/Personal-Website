@@ -1,20 +1,23 @@
 import React from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
+import resume from '../../assets/christianTrinidad_Resume2018.pdf';
 const NavLinks = props => {
   return (
     <>
       <ul>
         <li>
-          <a href="#">About</a>
+          <Link to="/#aboutSection">About</Link>
         </li>
         <li>
-          <a href="#">Résumé</a>
+          <a href={resume} target="_blank" rel="noopener noreferrer">
+            Résumé
+          </a>
         </li>
         <li>
-          <a href="#">Skills</a>
+          <Link to="/#skillSection">Skills</Link>
         </li>
         <li>
-          <a href="#">Projects</a>
+          <Link to="/projects">Projects</Link>
         </li>
       </ul>
     </>

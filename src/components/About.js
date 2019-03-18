@@ -94,7 +94,7 @@ const Wrapper = styled.section`
 `;
 const About = props => {
   return (
-    <Wrapper id="aboutsSection">
+    <Wrapper id="aboutSection">
       <Container>
         <div className="about-contents">
           <div className="left">

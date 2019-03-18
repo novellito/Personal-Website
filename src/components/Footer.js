@@ -9,6 +9,8 @@ const Wrapper = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
+  /* position: relative;
+  bottom: 0; */
   .ul-container {
     display: flex;
     padding-left: 0;
