@@ -1,12 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  bluePrimary,
-  blueSecondary,
-  white,
-  blueTertiary,
-  primaryTextColor
-} from '../colors';
+import { bluePrimary, blueSecondary, white, primaryTextColor } from '../colors';
 import '../assets/Devicons/devicon.css';
 import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
@@ -37,15 +31,6 @@ const Wrapper = styled.section`
       margin-top: 0;
     }
   }
-  i {
-    font-size: 1.2em;
-    color: inherit;
-    margin-right: 5px;
-  }
-  .colored {
-    font-size: 4em;
-    margin: 7px;
-  }
   .projects-btn {
     position: relative;
     top: 30px;
@@ -56,6 +41,10 @@ const Wrapper = styled.section`
     flex-wrap: wrap;
     align-items: center;
     margin-top: 25px;
+    .colored {
+      font-size: 4em;
+      margin: 7px;
+    }
     img {
       height: 80px;
       &.vscode {
@@ -66,22 +55,18 @@ const Wrapper = styled.section`
       }
     }
   }
-
   @media screen and (min-width: 1120px) {
     padding: 3rem 5.5rem;
   }
   @media screen and (min-width: 1200px) {
     padding: 3rem 21.5rem;
     padding-bottom: 5em;
-    .main-tech {
-      margin: 40px 0px 0px 0px;
-    }
-    .colored {
-      font-size: 5em;
-      margin: 0px 15px 0px 15px;
-    }
     .dev {
       margin: auto;
+      .colored {
+        font-size: 5em;
+        margin: 0px 15px;
+      }
       img {
         height: 92px;
         &.vscode {
@@ -132,8 +117,7 @@ const Skills = props => {
           classname="projects-btn"
           content={
             <>
-              <i className="fa fa-code" />
-              View Projects
+              <i className="fa fa-code" /> {'  '} View Projects
             </>
           }
         />

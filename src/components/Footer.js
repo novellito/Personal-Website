@@ -11,21 +11,20 @@ const Wrapper = styled.footer`
   justify-content: center;
   .ul-container {
     display: flex;
-    margin: 0;
     padding-left: 0;
     list-style: none;
+    justify-content: center;
     a {
       margin: 0 25px;
     }
-    justify-content: center;
     i {
       color: ${white};
       &:hover {
-        color: #00a0ff;
+        color: ${bluePrimary};
+        transition: 0.3s;
       }
     }
   }
-
   .love {
     color: ${white};
     visibility: hidden;
@@ -33,17 +32,10 @@ const Wrapper = styled.footer`
       color: #ff78ae;
     }
   }
-
   @media screen and (min-width: 766px) {
     .love {
       margin-left: auto;
       visibility: visible;
-    }
-  }
-
-  @media screen and (max-width: 321px) {
-    .ul-container {
-      padding-top: 25px;
     }
   }
 `;
@@ -85,7 +77,7 @@ const Footer = props => {
         </li>
       </ul>
       <span className="love">
-        Made with <i className="fa fa-heart" />{' '}
+        Made with <i className="fa fa-heart" />
       </span>
     </Wrapper>
   );
