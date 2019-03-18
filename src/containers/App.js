@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 import './App.css';
-import Hero from '../components/Hero';
+import { Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
-import About from '../components/About';
-import Experience from '../components/Experience';
-import Skills from '../components/Skills';
+import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Root from './Root';
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MiniNav />
         <Navbar />
-        <Hero />
-        <About />
-        <Experience />
-        <Skills />
+        <Switch>
+          <Route exact path="/" component={Root} />
+          <Route exact path="/projects" component={Projects} />
+        </Switch>
         <Footer />
       </div>
     );

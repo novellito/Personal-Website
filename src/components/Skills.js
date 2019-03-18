@@ -6,6 +6,7 @@ import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
 import sel from '../assets/selenium.png';
 import Button from './DefaultBtn';
+import Link from 'react-router-dom';
 
 const Wrapper = styled.section`
   padding: 3rem 1.5rem;
@@ -112,7 +113,7 @@ const Skills = props => {
         </div>
         <Button
           btnColor={white}
-          // href={resume}
+          link={'/projects'}
           borderColor={blueSecondary}
           classname="projects-btn"
           content={
