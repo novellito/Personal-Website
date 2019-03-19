@@ -36,6 +36,7 @@ const Wrapper = styled.section`
   @media screen and (min-width: 950px) {
     .row-cont {
       display: grid;
+      /* grid-template-columns: 6fr 6fr; */
       grid-template-columns: 4fr 4fr 4fr;
       grid-gap: 20px;
     }
@@ -74,7 +75,7 @@ const Projects = props => {
               style={{ backgroundColor: '#262626' }}
               imgSrc={rtc}
             />
-            <Project
+            {/*<Project
               description={desc[2]}
               techProp={['Laravel 5', 'Node.js', 'Socket.io', 'MySQL']}
               projectName="NoteRoom"
@@ -130,7 +131,7 @@ const Projects = props => {
               projLink="http://novellito.github.io"
               style={{ backgroundColor: '#76AFFF ' }}
               imgSrc={web}
-            />
+            /> */}
           </div>
         </div>
       </div>
