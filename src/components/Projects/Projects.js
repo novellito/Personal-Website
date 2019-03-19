@@ -1,7 +1,12 @@
 import React from 'react';
 // import snapcode from '../assets/snapcode.png';
 import styled from 'styled-components';
-import { bluePrimary, blueSecondary, white } from '../../colors';
+import {
+  bluePrimary,
+  blueSecondary,
+  white,
+  primaryTextColor
+} from '../../colors';
 import csuncs from '../../assets/csuncs.png';
 import scrambleDash from '../../assets/scramDash.png';
 import noteroom from '../../assets/nr.png';
@@ -19,7 +24,10 @@ const Wrapper = styled.section`
   height: 100vh;
   position: relative;
   top: 100px;
-
+  h1 {
+    color: ${primaryTextColor};
+    font-size: 1.75em;
+  }
   .row-cont {
     display: grid;
     grid-template-columns: auto;
@@ -48,9 +56,7 @@ const Projects = props => {
   return (
     <Wrapper>
       {/* <div id="projects"> */}
-      <h1 className="projectTitle">
-        Projects <i className="fa fa-code" aria-hidden="true" />
-      </h1>
+      <h1 className="projectTitle">Projects</h1>
       <div className="container wow rollIn">
         <div className="row-cont">
           <Project
