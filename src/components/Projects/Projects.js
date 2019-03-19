@@ -17,6 +17,8 @@ import desc from './Descriptions';
 
 const Wrapper = styled.section`
   height: 100vh;
+  position: relative;
+  top: 100px;
 
   .row-cont {
     display: grid;
@@ -45,37 +47,37 @@ const Wrapper = styled.section`
 const Projects = props => {
   return (
     <Wrapper>
-      <div id="projects">
-        <h1 className="projectTitle">
-          Projects <i className="fa fa-code" aria-hidden="true" />
-        </h1>
-        <div className="container wow rollIn">
-          <div className="row-cont">
-            <Project
-              description={desc[0]}
-              techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
-              projectName="CSUN-CS Planner"
-              projLink="https://github.com/novellito/CSUN-MEAN-App"
-              style={{ backgroundColor: '#D00D2D' }}
-              imgSrc={csuncs}
-            />
-            <Project
-              description={desc[1]}
-              techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
-              projectName="Scramble Dash"
-              projLink="https://github.com/novellito/scramble-dash"
-              imgSrc={scrambleDash}
-              style={{ backgroundColor: '#36479e' }}
-            />
-            <Project
-              description={desc[7]}
-              techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
-              projectName="Real Time Captioning"
-              projLink="https://github.com/novellito/Real-Time-Captioning"
-              style={{ backgroundColor: '#262626' }}
-              imgSrc={rtc}
-            />
-            {/*<Project
+      {/* <div id="projects"> */}
+      <h1 className="projectTitle">
+        Projects <i className="fa fa-code" aria-hidden="true" />
+      </h1>
+      <div className="container wow rollIn">
+        <div className="row-cont">
+          <Project
+            description={desc[0]}
+            techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
+            projectName="CSUN-CS Planner"
+            projLink="https://github.com/novellito/CSUN-MEAN-App"
+            style={{ backgroundColor: '#D00D2D' }}
+            imgSrc={csuncs}
+          />
+          <Project
+            description={desc[1]}
+            techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
+            projectName="Scramble Dash"
+            projLink="https://github.com/novellito/scramble-dash"
+            imgSrc={scrambleDash}
+            style={{ backgroundColor: '#36479e' }}
+          />
+          <Project
+            description={desc[7]}
+            techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
+            projectName="Real Time Captioning"
+            projLink="https://github.com/novellito/Real-Time-Captioning"
+            style={{ backgroundColor: '#262626' }}
+            imgSrc={rtc}
+          />
+          {/*<Project
               description={desc[2]}
               techProp={['Laravel 5', 'Node.js', 'Socket.io', 'MySQL']}
               projectName="NoteRoom"
@@ -132,9 +134,9 @@ const Projects = props => {
               style={{ backgroundColor: '#76AFFF ' }}
               imgSrc={web}
             /> */}
-          </div>
         </div>
       </div>
+      {/* </div> */}
     </Wrapper>
   );
 };

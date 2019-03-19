@@ -19,11 +19,15 @@ const Wrapper = styled.section`
     /* padding: 15px; */
     color: #ffffffdb;
 
-    /* on desktop */
+    /* on desktop height */
     height: 250px;
     /* align-content: center; */
     img {
       max-width: 80%;
+      transition: all 0.3s;
+    }
+    &:hover img {
+      transform: scale(1.1);
     }
   }
   .card-body {
