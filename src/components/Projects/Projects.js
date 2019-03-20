@@ -60,7 +60,7 @@ const Projects = props => {
       <div className="container wow rollIn">
         <div className="row-cont">
           <Project
-            description={desc[0]}
+            description={desc.csunCSPlanner}
             techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
             projectName="CSUN-CS Planner"
             projLink="https://github.com/novellito/CSUN-MEAN-App"
@@ -68,7 +68,7 @@ const Projects = props => {
             imgSrc={csuncs}
           />
           <Project
-            description={desc[1]}
+            description={desc.scrambleDash}
             techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
             projectName="Scramble Dash"
             projLink="https://github.com/novellito/scramble-dash"
@@ -76,70 +76,70 @@ const Projects = props => {
             style={{ backgroundColor: '#36479e' }}
           />
           <Project
-            description={desc[7]}
+            description={desc.rtc}
             techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
             projectName="Real Time Captioning"
             projLink="https://github.com/novellito/Real-Time-Captioning"
             style={{ backgroundColor: '#262626' }}
             imgSrc={rtc}
           />
-          {/*<Project
-              description={desc[2]}
-              techProp={['Laravel 5', 'Node.js', 'Socket.io', 'MySQL']}
-              projectName="NoteRoom"
-              projLink="https://github.com/novellito/NoteRoom"
-              style={{ backgroundColor: '#00a0ff' }}
-              imgSrc={noteroom}
-            />
+          <Project
+            description={desc.noteroom}
+            techProp={['Laravel 5', 'Node.js', 'Socket.io', 'MySQL']}
+            projectName="NoteRoom"
+            projLink="https://github.com/novellito/NoteRoom"
+            style={{ backgroundColor: '#00a0ff' }}
+            imgSrc={noteroom}
+          />
 
-            <Project
-              description={desc[8]}
-              techProp={['MongoDb', 'Express.js', 'React.js', 'Node.js']}
-              projectName="Todo App"
-              projLink="https://github.com/novellito/Web-Engineering"
-              style={{ backgroundColor: 'white' }}
-              imgSrc={todo}
-            />
-            <Project
-              description={desc[9]}
-              techProp={['MongoDb', 'Express.js', 'Vue.js', 'Node.js']}
-              projectName="Vuetiful Chat"
-              projLink="https://github.com/novellito/Web-Engineering/tree/master/chat-app"
-              style={{ backgroundColor: '#1b1b1b' }}
-              imgSrc={chat}
-            />
-            <Project
-              description={desc[3]}
-              techProp={['Node.js', 'Twitter API', 'Handlebars']}
-              projectName="TriniBot"
-              projLink="https://github.com/novellito/TriniBot"
-              style={{ backgroundColor: 'rgba(251,168,15,.65)' }}
-              imgSrc={twitterBot}
-            />
-            <Project
-              description={desc[5]}
-              techProp={['Java', 'Google API']}
-              projectName="Voitcha"
-              projLink="https://github.com/novellito/CSUN-Accessibility-Competition-Project"
-              style={{ backgroundColor: '#b94848' }}
-              imgSrc={voitcha}
-            />
-            <Project
-              description={desc[6]}
-              techProp={['Electron', 'Selenium', 'Chrome Extension']}
-              projectName="Distance Learning Tools"
-              projLink="https://github.com/novellito/Tseng-Utilities"
-              style={{ backgroundColor: '#607d8b  ' }}
-              imgSrc={dl}
-            />
-            <Project
-              description={desc[4]}
-              techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
-              projectName="Website v1"
-              projLink="http://novellito.github.io"
-              style={{ backgroundColor: '#76AFFF ' }}
-              imgSrc={web}
-            /> */}
+          <Project
+            description={desc.todoApp}
+            techProp={['MongoDb', 'Express.js', 'React.js', 'Node.js']}
+            projectName="Todo App"
+            projLink="https://github.com/novellito/Web-Engineering"
+            style={{ backgroundColor: 'white' }}
+            imgSrc={todo}
+          />
+          <Project
+            description={desc.vueChat}
+            techProp={['MongoDb', 'Express.js', 'Vue.js', 'Node.js']}
+            projectName="Vuetiful Chat"
+            projLink="https://github.com/novellito/Web-Engineering/tree/master/chat-app"
+            style={{ backgroundColor: '#1b1b1b' }}
+            imgSrc={chat}
+          />
+          <Project
+            description={desc.triniBot}
+            techProp={['Node.js', 'Twitter API', 'Handlebars']}
+            projectName="TriniBot"
+            projLink="https://github.com/novellito/TriniBot"
+            style={{ backgroundColor: 'rgba(251,168,15,.65)' }}
+            imgSrc={twitterBot}
+          />
+          <Project
+            description={desc.voitcha}
+            techProp={['Java', 'Google API']}
+            projectName="Voitcha"
+            projLink="https://github.com/novellito/CSUN-Accessibility-Competition-Project"
+            style={{ backgroundColor: '#b94848' }}
+            imgSrc={voitcha}
+          />
+          <Project
+            description={desc.dlTech}
+            techProp={['Electron', 'Selenium', 'Chrome Extension']}
+            projectName="Distance Learning Tools"
+            projLink="https://github.com/novellito/Tseng-Utilities"
+            style={{ backgroundColor: '#607d8b  ' }}
+            imgSrc={dl}
+          />
+          <Project
+            description={desc.webV1}
+            techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
+            projectName="Website v1"
+            projLink="http://novellito.github.io"
+            style={{ backgroundColor: '#76AFFF ' }}
+            imgSrc={web}
+          />
         </div>
       </div>
       {/* </div> */}
