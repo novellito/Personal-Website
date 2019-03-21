@@ -19,45 +19,56 @@ import todo from '../../assets/todo.jpg';
 import chat from '../../assets/vueChat.png';
 import Project from './Project';
 import desc from './Descriptions';
-
+import Container from '../../containers/ContainerHOC';
 const Wrapper = styled.section`
   height: 100vh;
   position: relative;
   top: 100px;
+  /* #projects {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+  } */
   h1 {
     color: ${primaryTextColor};
     font-size: 1.75em;
   }
   .row-cont {
     display: grid;
-    grid-template-columns: auto;
+    /* grid-template-columns: repeat(auto-fit); */
+    /* grid-template-columns: auto; */
     grid-gap: 20px;
     padding-top: 40px;
     padding-bottom: 60px;
+
+    /* width: 1000px; */
+    margin: 0 auto;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
     .row-cont {
-      display: grid;
-      grid-template-columns: 4fr 4fr;
+      grid-template-columns: 6fr 6fr;
+      /* grid-template-columns: auto; */
       grid-gap: 20px;
     }
   }
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 1400px) {
+    /* @media screen and (min-width: 950px) { */
     .row-cont {
-      display: grid;
       /* grid-template-columns: 6fr 6fr; */
       grid-template-columns: 4fr 4fr 4fr;
-      grid-gap: 20px;
     }
   }
 `;
 const Projects = props => {
   return (
     <Wrapper>
-      {/* <div id="projects"> */}
-      <h1 className="projectTitle">Projects</h1>
-      <div className="container wow rollIn">
+      <div id="projects">
+        {/* <Container> */}
+        <h1 className="projectTitle">Projects</h1>
         <div className="row-cont">
           <Project
             description={desc.csunCSPlanner}
@@ -141,8 +152,8 @@ const Projects = props => {
             imgSrc={web}
           />
         </div>
+        {/* </Container> */}
       </div>
-      {/* </div> */}
     </Wrapper>
   );
 };

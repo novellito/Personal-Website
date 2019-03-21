@@ -8,8 +8,8 @@ import {
 } from '../../colors';
 import styled from 'styled-components';
 import Container from '../../containers/ContainerHOC';
-const Wrapper = styled.section`
-  height: 100vh;
+const Wrapper = styled.div`
+  /* height: 100vh; */
   .thumbnail {
     background-color: aquamarine;
     min-height: 200px;
@@ -41,7 +41,8 @@ const Wrapper = styled.section`
       font-size: 1.2em;
       color: ${primaryTextColor};
       &.project-description {
-        font-size: 1em;
+        font-size: 0.9em;
+        /* font-size: 1em; */
         text-align: left;
         color: #5a5d7ade;
       }
@@ -115,51 +116,61 @@ const Wrapper = styled.section`
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26),
       0 12px 10px 0 rgba(0, 0, 0, 0.2);
   }
+  @media screen and (min-width: 768px) {
+    .card-body p.project-description {
+      font-size: 0.8em;
+    }
+  }
+  @media screen and (min-width: 960px) {
+    .card-body p.project-description {
+      font-size: 1em;
+    }
+  }
 `;
 const Project = props => {
   return (
     <Wrapper>
-      <Container>
-        <div className="terminal">
-          <div className="term-btn" />
-          <div className="term-btn minimize" />
-          <div className="term-btn zoom" />
-        </div>
-        <div className="card">
-          {/* <div style={props.style} className="thumbnail view overlay"> */}
-          <a
-            href={props.projLink}
-            target="_blank"
-            alt={'github link to ' + props.projectName}
-            rel="noopener noreferrer"
-            className="thumbnail"
-            style={props.style}
-          >
-            <img src={props.imgSrc} alt={props.projectName} />
-          </a>
-          <div className="card-body">
-            <p>{props.projectName}</p>
-            <div className="project-info">
-              <a
-                href={props.projLink}
-                target="_blank"
-                alt={'github link to ' + props.projectName}
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-github fa-2x" />
-              </a>
-              {props.techProp.map((tech, id) => {
-                return (
-                  <span key={id} className="badge-pill">
-                    {tech}
-                  </span>
-                );
-              })}
-            </div>
-            <p className="project-description">{props.description}</p>
+      {/* <Container> */}
+      <div className="terminal">
+        <div className="term-btn" />
+        <div className="term-btn minimize" />
+        <div className="term-btn zoom" />
+      </div>
+      <div className="card">
+        {/* <div style={props.style} className="thumbnail view overlay"> */}
+        <a
+          href={props.projLink}
+          target="_blank"
+          alt={'github link to ' + props.projectName}
+          rel="noopener noreferrer"
+          className="thumbnail"
+          style={props.style}
+        >
+          <img src={props.imgSrc} alt={props.projectName} />
+        </a>
+        <div className="card-body">
+          <p>{props.projectName}</p>
+          <div className="project-info">
+            <a
+              href={props.projLink}
+              target="_blank"
+              alt={'github link to ' + props.projectName}
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-github fa-2x" />
+            </a>
+            {props.techProp.map((tech, id) => {
+              return (
+                <span key={id} className="badge-pill">
+                  {tech}
+                </span>
+              );
+            })}
           </div>
+          <p className="project-description">{props.description}</p>
         </div>
-      </Container>
+      </div>
+      {/* </Container> */}
     </Wrapper>
   );
 };
