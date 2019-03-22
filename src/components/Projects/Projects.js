@@ -21,9 +21,11 @@ import Project from './Project';
 import desc from './Descriptions';
 import Container from '../../containers/ContainerHOC';
 const Wrapper = styled.section`
-  height: 100vh;
+  /* height: 100vh;
   position: relative;
-  top: 100px;
+  top: 100px; */
+  margin-top: 100px;
+
   /* #projects {
     padding-right: 15px;
     padding-left: 15px;
