@@ -7,21 +7,16 @@ import {
   primaryTextColor
 } from '../../colors';
 import styled from 'styled-components';
-import Container from '../../containers/ContainerHOC';
 const Wrapper = styled.div`
-  /* height: 100vh; */
+  min-width: 100%;
   .thumbnail {
     background-color: aquamarine;
     min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 15px; */
     color: #ffffffdb;
-
-    /* on desktop height */
     height: 250px;
-    /* align-content: center; */
     img {
       max-width: 80%;
       transition: all 0.3s;
@@ -42,7 +37,6 @@ const Wrapper = styled.div`
       color: ${primaryTextColor};
       &.project-description {
         font-size: 0.9em;
-        /* font-size: 1em; */
         text-align: left;
         color: #5a5d7ade;
       }
@@ -77,12 +71,9 @@ const Wrapper = styled.div`
 
   .terminal {
     display: flex;
-    box-sizing: border-box;
     height: 25px;
-    position: relative;
     z-index: 1;
     background-color: #bbb;
-    margin: 0 auto;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16),
@@ -130,14 +121,12 @@ const Wrapper = styled.div`
 const Project = props => {
   return (
     <Wrapper>
-      {/* <Container> */}
       <div className="terminal">
         <div className="term-btn" />
         <div className="term-btn minimize" />
         <div className="term-btn zoom" />
       </div>
       <div className="card">
-        {/* <div style={props.style} className="thumbnail view overlay"> */}
         <a
           href={props.projLink}
           target="_blank"
@@ -170,7 +159,6 @@ const Project = props => {
           <p className="project-description">{props.description}</p>
         </div>
       </div>
-      {/* </Container> */}
     </Wrapper>
   );
 };

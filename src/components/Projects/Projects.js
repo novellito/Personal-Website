@@ -19,49 +19,30 @@ import todo from '../../assets/todo.jpg';
 import chat from '../../assets/vueChat.png';
 import Project from './Project';
 import desc from './Descriptions';
-import Container from '../../containers/ContainerHOC';
 const Wrapper = styled.section`
-  /* height: 100vh;
-  position: relative;
-  top: 100px; */
   margin-top: 100px;
-
-  /* #projects {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1600px;
-  } */
   h1 {
     color: ${primaryTextColor};
     font-size: 1.75em;
   }
   .row-cont {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit); */
-    /* grid-template-columns: auto; */
     grid-gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-
-    /* width: 1000px; */
-    margin: 0 auto;
+    padding: 40px 15px 60px 15px;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
   }
-
   @media screen and (min-width: 768px) {
     .row-cont {
       grid-template-columns: 6fr 6fr;
-      /* grid-template-columns: auto; */
-      grid-gap: 20px;
+      max-width: 1000px;
     }
   }
   @media screen and (min-width: 1400px) {
-    /* @media screen and (min-width: 950px) { */
     .row-cont {
-      /* grid-template-columns: 6fr 6fr; */
-      grid-template-columns: 4fr 4fr 4fr;
+      max-width: 1400px;
+      grid-gap: 30px;
     }
   }
 `;
@@ -69,7 +50,6 @@ const Projects = props => {
   return (
     <Wrapper>
       <div id="projects">
-        {/* <Container> */}
         <h1 className="projectTitle">Projects</h1>
         <div className="row-cont">
           <Project
@@ -98,7 +78,7 @@ const Projects = props => {
           />
           <Project
             description={desc.noteroom}
-            techProp={['Laravel 5', 'Node.js', 'Socket.io', 'MySQL']}
+            techProp={['Laravel', 'Node.js', 'Socket.io', 'MySQL']}
             projectName="NoteRoom"
             projLink="https://github.com/novellito/NoteRoom"
             style={{ backgroundColor: '#00a0ff' }}
@@ -154,7 +134,6 @@ const Projects = props => {
             imgSrc={web}
           />
         </div>
-        {/* </Container> */}
       </div>
     </Wrapper>
   );
