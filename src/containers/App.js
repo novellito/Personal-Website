@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense, lazy } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
-import Projects from '../components/Projects/Projects';
 import Footer from '../components/Footer';
 import Root from './Root';
+const Projects = lazy(() => import('../components/Projects/Projects'));
+
 class App extends Component {
   render() {
     return (
@@ -14,7 +15,9 @@ class App extends Component {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Root} />
-          <Route exact path="/projects" component={Projects} />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Route exact path="/projects" component={Projects} />
+          </Suspense>
         </Switch>
         <Footer />
       </div>
