@@ -9,21 +9,23 @@ const Wrapper = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* position: relative;
-  bottom: 0; */
   .ul-container {
     display: flex;
-    padding-left: 0;
     list-style: none;
     justify-content: center;
-    a {
-      margin: 0 25px;
-    }
-    i {
-      color: ${white};
-      &:hover {
-        color: ${bluePrimary};
-        transition: 0.3s;
+    li {
+      a {
+        margin: 0 25px;
+        i {
+          color: ${white};
+          &:hover {
+            color: ${bluePrimary};
+            transition: 0.3s;
+          }
+        }
+      }
+      &:first-child a {
+        margin-left: 0;
       }
     }
   }
@@ -35,6 +37,9 @@ const Wrapper = styled.footer`
     }
   }
   @media screen and (min-width: 766px) {
+    .ul-container {
+      padding-left: 0;
+    }
     .love {
       margin-left: auto;
       visibility: visible;

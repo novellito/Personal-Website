@@ -20,10 +20,11 @@ import chat from '../../assets/vueChat.png';
 import Project from './Project';
 import desc from './Descriptions';
 const Wrapper = styled.section`
-  margin-top: 100px;
+  margin-top: 40px;
   h1 {
     color: ${primaryTextColor};
     font-size: 1.75em;
+    margin-bottom: 0;
   }
   .row-cont {
     display: grid;
@@ -34,6 +35,7 @@ const Wrapper = styled.section`
     margin-left: auto;
   }
   @media screen and (min-width: 768px) {
+    margin-top: 130px;
     .row-cont {
       grid-template-columns: 6fr 6fr;
       max-width: 1000px;
@@ -50,7 +52,7 @@ const Projects = props => {
   return (
     <Wrapper>
       <div id="projects">
-        <h1 className="projectTitle">Projects</h1>
+        <h1>Projects</h1>
         <div className="row-cont">
           <Project
             description={desc.csunCSPlanner}

@@ -29,7 +29,6 @@ const Wrapper = styled.div`
     text-align: center;
     padding: 20px;
     background: ${white};
-    height: 200px;
     p {
       margin: 10px 0;
       font-weight: bold;
@@ -45,6 +44,7 @@ const Wrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
       i {
         color: #5998ff;
         &:hover {
@@ -102,12 +102,15 @@ const Wrapper = styled.div`
       }
     }
   }
-
   .card {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26),
       0 12px 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: auto;
   }
   @media screen and (min-width: 768px) {
+    .card-body {
+      height: 200px;
+    }
     .card-body p.project-description {
       font-size: 0.8em;
     }
@@ -156,7 +159,9 @@ const Project = props => {
               );
             })}
           </div>
-          <p className="project-description">{props.description}</p>
+          <div className="desc-con">
+            <p className="project-description">{props.description}</p>
+          </div>
         </div>
       </div>
     </Wrapper>
