@@ -1,12 +1,7 @@
 import React from 'react';
-import {
-  bluePrimary,
-  blueSecondary,
-  blueTertiary,
-  white,
-  primaryTextColor
-} from '../../colors';
+import { blueSecondary, white, primaryTextColor } from '../../colors';
 import styled from 'styled-components';
+import Terminal from './Terminal';
 const Wrapper = styled.div`
   min-width: 100%;
   .thumbnail {
@@ -68,40 +63,6 @@ const Wrapper = styled.div`
       }
     }
   }
-
-  .terminal {
-    display: flex;
-    height: 25px;
-    z-index: 1;
-    background-color: #bbb;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16),
-      0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    .term-btn {
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      border: 1px solid #000;
-      position: relative;
-      top: 9px;
-      left: 6px;
-      background-color: #ff3b47;
-      border-color: #9d252b;
-      display: inline-block;
-      &.zoom {
-        left: 10px;
-        background-color: #00d742;
-        border-color: #049931;
-      }
-      &.minimize {
-        left: 8px;
-        background-color: #ffc100;
-        border-color: #9d802c;
-      }
-    }
-  }
   .card {
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.26),
       0 12px 10px 0 rgba(0, 0, 0, 0.2);
@@ -124,11 +85,7 @@ const Wrapper = styled.div`
 const Project = props => {
   return (
     <Wrapper>
-      <div className="terminal">
-        <div className="term-btn" />
-        <div className="term-btn minimize" />
-        <div className="term-btn zoom" />
-      </div>
+      <Terminal />
       <div className="card">
         <a
           href={props.projLink}
@@ -159,9 +116,7 @@ const Project = props => {
               );
             })}
           </div>
-          <div className="desc-con">
-            <p className="project-description">{props.description}</p>
-          </div>
+          <p className="project-description">{props.description}</p>
         </div>
       </div>
     </Wrapper>

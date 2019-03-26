@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { white, primaryTextColor } from '../../colors';
 import NavLinks from './NavLinks';
+
 const duration = '.2s';
 const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-
 const Nav = styled.nav`
   ul {
     position: absolute;
@@ -39,7 +39,6 @@ const Nav = styled.nav`
       height: 3px;
       background-color: ${white};
     }
-
     &:hover,
     &:focus {
       &:before,

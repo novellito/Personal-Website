@@ -13,7 +13,6 @@ const Nav = styled.nav`
     right: 15px;
     border-radius: 50%;
     z-index: 2;
-
     button {
       background-color: ${mobileBGColor};
       height: 57px;
@@ -61,7 +60,6 @@ const Nav = styled.nav`
       transition: all 0.3s ease-in-out 0s;
       box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
     }
-
     &.open {
       ul {
         visibility: visible;
@@ -94,11 +92,9 @@ const Nav = styled.nav`
       opacity: 1;
       left: 16px;
       transition: 0.25s ease-in-out;
-
       &:nth-child(1) {
         top: 9px;
       }
-
       &:nth-child(2),
       &:nth-child(3) {
         top: 20px;
@@ -129,7 +125,6 @@ const Nav = styled.nav`
       }
     }
   }
-
   @media only screen and (max-width: 768px),
     screen and (max-height: 420px) and (orientation: landscape) {
     .mobile-menu {
