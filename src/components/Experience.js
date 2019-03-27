@@ -1,38 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import nbc from '../assets/nbc.png';
-import csun from '../assets/csun-seal.png';
-import lees from '../assets/lees.png';
-import Container from '../containers/ContainerHOC';
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {
-  bluePrimary,
-  blueSecondary,
-  white,
-  blueTertiary,
-  primaryTextColor
-} from '../colors';
+import nbc from '../assets/nbc.png';
+import csun from '../assets/csun-seal.png';
+import lees from '../assets/lees.png';
+import { white, blueTertiary, primaryTextColor } from '../colors';
 
 const Wrapper = styled.section`
   background: ${blueTertiary};
   padding-bottom: 6em;
-
-  .vertical-timeline::before {
-    top: unset;
-    height: 81%;
-  }
   h1 {
     color: ${primaryTextColor};
     margin-top: 0;
     padding-top: 2em;
     font-size: 1.75em;
   }
+  /* Timeline vertical line */
   .vertical-timeline {
     margin: 1em auto;
+    &::before {
+      top: unset;
+      height: 81%;
+    }
   }
   .vertical-timeline-element-icon {
     background: ${white};

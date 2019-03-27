@@ -1,12 +1,6 @@
 import React from 'react';
-// import snapcode from '../assets/snapcode.png';
 import styled from 'styled-components';
-import {
-  bluePrimary,
-  blueSecondary,
-  white,
-  primaryTextColor
-} from '../../colors';
+import { primaryTextColor } from '../../colors';
 import csuncs from '../../assets/csuncs.png';
 import scrambleDash from '../../assets/scramDash.png';
 import noteroom from '../../assets/nr.png';
@@ -19,6 +13,7 @@ import todo from '../../assets/todo.jpg';
 import chat from '../../assets/vueChat.png';
 import Project from './Project';
 import desc from './Descriptions';
+
 const Wrapper = styled.section`
   margin-top: 40px;
   h1 {

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+// Determine the link directs to a file/url or another route
 const MyLink = props => (
   <>
     {props.link ? (

@@ -1,8 +1,4 @@
 import React from 'react';
-import me1 from '../assets/surface.png';
-import me2 from '../assets/xtian.jpg';
-import me3 from '../assets/grad.jpg';
-import resume from '../assets/christianTrinidad_Resume2018.pdf';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styled from 'styled-components';
@@ -10,6 +6,10 @@ import Container from '../containers/ContainerHOC';
 import AboutLinks from './AboutLinks';
 import { bluePrimary, blueSecondary, white } from '../colors';
 import Button from './DefaultBtn';
+import me1 from '../assets/surface.png';
+import me2 from '../assets/xtian.jpg';
+import me3 from '../assets/grad.jpg';
+import resume from '../assets/christianTrinidad_Resume2018.pdf';
 
 const Wrapper = styled.section`
   padding: 60px 0 60px 0;
@@ -69,7 +69,9 @@ const Wrapper = styled.section`
         }
       }
     }
-
+    .carousel .slide {
+      background: none;
+    }
     /* media queries for .about-contents */
     @media screen and (min-width: 992px) {
       grid-template-columns: 1fr 3fr;
@@ -86,12 +88,9 @@ const Wrapper = styled.section`
         text-align: left;
       }
     }
-
-    .carousel .slide {
-      background: none;
-    }
   }
 `;
+
 const About = props => {
   return (
     <Wrapper id="aboutSection">

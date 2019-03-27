@@ -2,6 +2,7 @@ import React from 'react';
 import snapcode from '../assets/snapcode.png';
 import styled from 'styled-components';
 import { bluePrimary, blueSecondary, white } from '../colors';
+
 const Wrapper = styled.footer`
   padding: 30px 100px;
   height: 80px;

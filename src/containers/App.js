@@ -1,5 +1,4 @@
 import React, { Component, Suspense, lazy } from 'react';
-import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
@@ -10,7 +9,7 @@ const Projects = lazy(() => import('../components/Projects/Projects'));
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <>
         <MiniNav />
         <Navbar />
         <Switch>
@@ -20,7 +19,7 @@ class App extends Component {
           </Suspense>
         </Switch>
         <Footer />
-      </div>
+      </>
     );
   }
 }

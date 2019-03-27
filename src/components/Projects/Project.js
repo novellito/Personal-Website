@@ -2,6 +2,7 @@ import React from 'react';
 import { blueSecondary, white, primaryTextColor } from '../../colors';
 import styled from 'styled-components';
 import Terminal from './Terminal';
+
 const Wrapper = styled.div`
   min-width: 100%;
   .thumbnail {

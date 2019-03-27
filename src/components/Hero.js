@@ -10,7 +10,6 @@ const Wrapper = styled.section`
   position: relative;
   height: 100vh;
   background-color: ${bluePrimary};
-
   .hero-section {
     position: absolute;
     top: 25%;
@@ -44,7 +43,6 @@ const Wrapper = styled.section`
     max-width: 180px;
     max-height: 180px;
   }
-
   @keyframes typing {
     from {
       width: 0;
@@ -53,7 +51,6 @@ const Wrapper = styled.section`
       width: 100%;
     }
   }
-
   @keyframes blink-caret {
     from,
     to {
@@ -63,7 +60,6 @@ const Wrapper = styled.section`
       border-color: ${cursorColor};
     }
   }
-
   @media screen and (min-width: 580px) {
     .hero-section {
       top: 23%;
@@ -80,7 +76,6 @@ const Wrapper = styled.section`
       max-height: 240px;
     }
   }
-
   @media screen and (min-width: 992px) {
     .hero-section {
       p {
