@@ -132,15 +132,14 @@ const Nav = styled.nav`
     }
   }
 `;
+const handleClick = () => {
+  const [elem] = document.getElementsByClassName('mobile-menu');
+  const [elem2] = document.getElementsByClassName('line');
+  elem.classList.toggle('open');
+  elem2.classList.toggle('open');
+};
 
 const MiniNav = () => {
-  const handleClick = () => {
-    const [elem] = document.getElementsByClassName('mobile-menu');
-    const [elem2] = document.getElementsByClassName('line');
-    elem.classList.toggle('open');
-    elem2.classList.toggle('open');
-  };
-
   return (
     <Nav>
       <div className="mobile-menu">

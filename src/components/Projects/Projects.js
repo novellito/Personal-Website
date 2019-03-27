@@ -42,6 +42,12 @@ const Wrapper = styled.section`
       grid-gap: 30px;
     }
   }
+  /* For Ipads, iPhoneX & Pixel 2XL :) */
+  @media only screen and (max-width: 768px),
+    screen and (max-height: 1024px) and (orientation: portrait),
+    screen and (min-width: 800px) and (max-height: 415px) and (orientation: landscape) {
+    margin-top: 40px;
+  }
 `;
 const Projects = props => {
   return (
