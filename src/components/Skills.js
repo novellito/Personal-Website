@@ -1,11 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { bluePrimary, blueSecondary, white, primaryTextColor } from '../colors';
+import {
+  bluePrimary,
+  blueSecondary,
+  white,
+  primaryTextColor
+} from '../utils/colors';
 import '../assets/Devicons/devicon.css';
 import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
 import sel from '../assets/selenium.png';
 import Button from './DefaultBtn';
+import { useWow } from '../utils/wowHook';
 
 const Wrapper = styled.section`
   padding: 3rem 1.5rem;
@@ -82,6 +88,7 @@ const Wrapper = styled.section`
 `;
 
 const Skills = props => {
+  useWow();
   return (
     <Wrapper id="skillSection">
       <div className="skills-card">

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { white } from '../../colors';
+import { white } from '../../utils/colors';
 import NavLinks from './NavLinks';
 
 const mobileBGColor = 'rgb(31, 31, 31)';

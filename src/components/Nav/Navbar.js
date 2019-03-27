@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { white, primaryTextColor } from '../../colors';
+import { white, primaryTextColor } from '../../utils/colors';
 import NavLinks from './NavLinks';
 
 const duration = '.2s';

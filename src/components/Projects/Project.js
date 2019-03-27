@@ -1,5 +1,5 @@
 import React from 'react';
-import { blueSecondary, white, primaryTextColor } from '../../colors';
+import { blueSecondary, white, primaryTextColor } from '../../utils/colors';
 import styled from 'styled-components';
 import Terminal from './Terminal';
 

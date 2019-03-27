@@ -4,12 +4,13 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
 import AboutLinks from './AboutLinks';
-import { bluePrimary, blueSecondary, white } from '../colors';
+import { bluePrimary, blueSecondary, white } from '../utils/colors';
 import Button from './DefaultBtn';
 import me1 from '../assets/surface.png';
 import me2 from '../assets/xtian.jpg';
 import me3 from '../assets/grad.jpg';
 import resume from '../assets/christianTrinidad_Resume2018.pdf';
+import { useWow } from '../utils/wowHook';
 
 const Wrapper = styled.section`
   padding: 60px 0 60px 0;
@@ -92,11 +93,12 @@ const Wrapper = styled.section`
 `;
 
 const About = props => {
+  useWow();
   return (
     <Wrapper id="aboutSection">
       <Container>
         <div className="about-contents">
-          <div className="left">
+          <div className="left wow fadeInLeft">
             <Carousel
               showArrows={false}
               showStatus={false}
@@ -111,7 +113,8 @@ const About = props => {
               <img className="xtian" alt="me at graduation" src={me3} />
             </Carousel>
           </div>
-          <div className="right">
+
+          <div className="right wow fadeInRight">
             <h3>About Me</h3>
             <p>
               I'm an undergraduate student studying computer science at

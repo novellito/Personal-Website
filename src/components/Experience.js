@@ -8,7 +8,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import nbc from '../assets/nbc.png';
 import csun from '../assets/csun-seal.png';
 import lees from '../assets/lees.png';
-import { white, blueTertiary, primaryTextColor } from '../colors';
+import { white, blueTertiary, primaryTextColor } from '../utils/colors';
 
 const Wrapper = styled.section`
   background: ${blueTertiary};

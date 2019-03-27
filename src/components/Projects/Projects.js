@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { primaryTextColor } from '../../colors';
+import { primaryTextColor } from '../../utils/colors';
 import csuncs from '../../assets/csuncs.png';
 import scrambleDash from '../../assets/scramDash.png';
 import noteroom from '../../assets/nr.png';

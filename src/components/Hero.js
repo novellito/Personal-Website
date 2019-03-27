@@ -2,7 +2,7 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
-import { bluePrimary, primaryTextColor } from '../colors';
+import { bluePrimary, primaryTextColor } from '../utils/colors';
 import Me from '../assets/me.jpg';
 
 const cursorColor = '#E3F2FD';
