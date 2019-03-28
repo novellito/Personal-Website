@@ -85,7 +85,7 @@ const Wrapper = styled.div`
 `;
 const Project = props => {
   return (
-    <Wrapper>
+    <Wrapper className={props.wow}>
       <Terminal />
       <div className="card">
         <a

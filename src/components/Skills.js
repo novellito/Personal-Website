@@ -91,7 +91,7 @@ const Skills = props => {
   useWow();
   return (
     <Wrapper id="skillSection">
-      <div className="skills-card">
+      <div className="skills-card wow flipInX" data-wow-delay=".1s">
         <h1>Skills</h1>
         <p>Frontend</p>
         <div className="dev">
