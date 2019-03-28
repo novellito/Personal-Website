@@ -3,6 +3,7 @@ import Particles from 'react-particles-js';
 import styled from 'styled-components';
 import Container from '../containers/ContainerHOC';
 import { bluePrimary, primaryTextColor } from '../utils/colors';
+import particleConfig from '../utils/particleConfig';
 import Me from '../assets/me.jpg';
 
 const cursorColor = '#E3F2FD';
@@ -10,6 +11,9 @@ const Wrapper = styled.section`
   position: relative;
   height: 100vh;
   background-color: ${bluePrimary};
+  .particles {
+    height: 100%;
+  }
   .hero-section {
     position: absolute;
     top: 25%;
@@ -108,7 +112,7 @@ const Wrapper = styled.section`
 const Hero = () => {
   return (
     <Wrapper>
-      <Particles className="particles" />
+      <Particles className="particles" params={particleConfig} />
       <Container>
         <div className="hero-section">
           <p>Hello World!</p>
