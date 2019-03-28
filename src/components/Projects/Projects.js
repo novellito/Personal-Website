@@ -11,6 +11,8 @@ import dl from '../../assets/dlTools.png';
 import web from '../../assets/website.png';
 import todo from '../../assets/todo.jpg';
 import chat from '../../assets/vueChat.png';
+import boba from '../../assets/bobalish.png';
+import cc from '../../assets/ccLogo.png';
 import Project from './Project';
 import desc from './Descriptions';
 
@@ -55,6 +57,22 @@ const Projects = props => {
       <div id="projects">
         <h1>Projects</h1>
         <div className="row-cont">
+          <Project
+            description={desc.csunCSPlanner}
+            techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
+            projectName="Clout Companion"
+            projLink="https://github.com/novellito/Clout-Companion"
+            style={{ backgroundColor: 'rgb(48, 48, 48)' }}
+            imgSrc={cc}
+          />
+          <Project
+            description={desc.scrambleDash}
+            techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
+            projectName="Bobalish"
+            projLink="https://github.com/novellito/Bobalish"
+            imgSrc={boba}
+            style={{ backgroundColor: '#b3e5fc' }}
+          />
           <Project
             description={desc.csunCSPlanner}
             techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
