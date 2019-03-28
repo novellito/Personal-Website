@@ -3,6 +3,6 @@ import WOW from 'wowjs';
 
 export const useWow = () => {
   useEffect(() => {
-    new WOW.WOW().init();
+    new WOW.WOW({ live: false }).init();
   }, []);
 };

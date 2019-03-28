@@ -143,7 +143,7 @@ const MiniNav = () => {
   return (
     <Nav>
       <div className="mobile-menu">
-        <NavLinks />
+        <NavLinks miniNav />
         <button onClick={() => handleClick()}>
           <div className="line">
             <span />

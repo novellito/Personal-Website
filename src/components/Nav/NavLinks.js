@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { withRouter } from 'react-router-dom';
 import resume from '../../assets/christianTrinidad_Resume2018.pdf';
 
 const NavLinks = props => {
   const { pathname } = props.location;
+  useEffect(() => {
+    // We do not call the setColor function for the mobile nav since it is
+    // unnecessary. We set the navbar hover color white if in '/' else set to blue
+    if (!props.miniNav) props.setColor(pathname);
+  });
   return (
     <>
       <ul>

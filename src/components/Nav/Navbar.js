@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
-import { white, primaryTextColor } from '../../utils/colors';
+import { white, primaryTextColor, blueSecondary } from '../../utils/colors';
 import NavLinks from './NavLinks';
 
 const duration = '.2s';
@@ -37,7 +37,7 @@ const Nav = styled.nav`
       right: 0;
       bottom: 2px;
       height: 3px;
-      background-color: ${white};
+      background-color: ${props => props.color};
     }
     &:hover,
     &:focus {
@@ -66,9 +66,13 @@ const Nav = styled.nav`
 `;
 
 const Navbar = () => {
+  const [color, setColor] = useState(white);
+
   return (
-    <Nav>
-      <NavLinks />
+    <Nav color={color}>
+      <NavLinks
+        setColor={loc => setColor(loc === '/' ? white : blueSecondary)}
+      />
     </Nav>
   );
 };
