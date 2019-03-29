@@ -10,6 +10,7 @@ import '../assets/Devicons/devicon.css';
 import '../assets/Devicons/devicon-colors.css';
 import vscode from '../assets/vscode.png';
 import sel from '../assets/selenium.png';
+import gql from '../assets/graphql.png';
 import Button from './DefaultBtn';
 import { useWow } from '../utils/wowHook';
 
@@ -107,6 +108,8 @@ const Skills = props => {
           <i className="devicon-mongodb-plain colored" />
           <i className="devicon-java-plain colored" />
           <i className="devicon-mysql-plain colored" />
+          <img src={gql} className="gql" alt="graphql" />
+
           <i className="devicon-python-plain colored" />
           <i className="devicon-php-plain colored" />
         </div>

@@ -62,8 +62,8 @@ const Projects = props => {
         <h1>Projects</h1>
         <div className="row-cont">
           <Project
-            description={desc.csunCSPlanner}
-            techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
+            description={desc.cloutCompanion}
+            techProp={['React.js', 'Redux', 'MongoDb', 'Node.js', 'Docker']}
             projectName="Clout Companion"
             projLink="https://github.com/novellito/Clout-Companion"
             style={{ backgroundColor: 'rgb(48, 48, 48)' }}
@@ -71,8 +71,8 @@ const Projects = props => {
             wow="wow fadeInLeft"
           />
           <Project
-            description={desc.scrambleDash}
-            techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
+            description={desc.bobalish}
+            techProp={['Angular', 'GraphQL', 'PostgreSQL', 'Node.js', 'Docker']}
             projectName="Bobalish"
             projLink="https://github.com/novellito/Bobalish"
             imgSrc={boba}
@@ -166,24 +166,24 @@ const Projects = props => {
             techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
             projectName="Website v1"
             projLink="http://novellito.github.io"
-            style={{ backgroundColor: '#76AFFF ' }}
+            style={{ backgroundColor: 'grey ' }}
             imgSrc={web1}
             wow="wow fadeInRight"
           />
           <Project
-            description={desc.webV1}
-            techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
+            description={desc.webV2}
+            techProp={['React.js']}
             projectName="Website v2"
-            projLink="http://novellito.github.io"
-            style={{ backgroundColor: '#76AFFF ' }}
+            projLink="https://github.com/novellito/Personal-Website"
+            style={{ backgroundColor: '#3b5f92 ' }}
             imgSrc={web2}
             wow="wow fadeInRight"
           />
           <Project
-            description={desc.webV1}
-            techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
+            description={desc.webV3}
+            techProp={['React.js', 'Styled Components']}
             projectName="Website v3"
-            projLink="http://novellito.github.io"
+            projLink="https://www.cntrinidad.me/"
             style={{ backgroundColor: '#76AFFF ' }}
             imgSrc={web3}
             wow="wow fadeInRight"

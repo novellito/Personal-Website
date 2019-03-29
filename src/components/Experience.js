@@ -29,7 +29,7 @@ const Wrapper = styled.section`
     margin: 1em auto;
     &::before {
       top: unset;
-      height: 81%;
+      height: 80%;
     }
   }
   .vertical-timeline-element-icon {
