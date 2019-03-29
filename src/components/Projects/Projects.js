@@ -8,7 +8,9 @@ import twitterBot from '../../assets/bot.png';
 import voitcha from '../../assets/voitcha.png';
 import rtc from '../../assets/rtc.png';
 import dl from '../../assets/dlTools.png';
-import web from '../../assets/website.png';
+import web1 from '../../assets/websitev1.png';
+import web2 from '../../assets/websitev2.png';
+import web3 from '../../assets/websitev3.png';
 import todo from '../../assets/todo.jpg';
 import chat from '../../assets/vueChat.png';
 import boba from '../../assets/bobalish.png';
@@ -165,7 +167,25 @@ const Projects = props => {
             projectName="Website v1"
             projLink="http://novellito.github.io"
             style={{ backgroundColor: '#76AFFF ' }}
-            imgSrc={web}
+            imgSrc={web1}
+            wow="wow fadeInRight"
+          />
+          <Project
+            description={desc.webV1}
+            techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
+            projectName="Website v2"
+            projLink="http://novellito.github.io"
+            style={{ backgroundColor: '#76AFFF ' }}
+            imgSrc={web2}
+            wow="wow fadeInRight"
+          />
+          <Project
+            description={desc.webV1}
+            techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
+            projectName="Website v3"
+            projLink="http://novellito.github.io"
+            style={{ backgroundColor: '#76AFFF ' }}
+            imgSrc={web3}
             wow="wow fadeInRight"
           />
         </div>

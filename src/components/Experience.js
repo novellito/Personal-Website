@@ -8,7 +8,12 @@ import 'react-vertical-timeline-component/style.min.css';
 import nbc from '../assets/nbc.png';
 import csun from '../assets/csun-seal.png';
 import lees from '../assets/lees.png';
-import { white, blueTertiary, primaryTextColor } from '../utils/colors';
+import {
+  white,
+  blueSecondary,
+  blueTertiary,
+  primaryTextColor
+} from '../utils/colors';
 
 const Wrapper = styled.section`
   background: ${blueTertiary};
@@ -45,6 +50,14 @@ const Wrapper = styled.section`
     height: 25px;
     position: relative;
     top: 5px;
+  }
+  .dl-apps {
+    text-decoration: none;
+    color: ${blueSecondary};
+    &:hover {
+      color: #82b1ff96;
+      transition: 0.3s;
+    }
   }
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
@@ -84,12 +97,13 @@ const Experience = props => {
           icon={<img src={nbc} alt="" className="nbc" />}
         >
           <h3 className="vertical-timeline-element-title">
-            Media Tech Associate
+            NBCUniversal | Media Tech Associate
           </h3>
           <h4 className="vertical-timeline-element-subtitle">NY / LA</h4>
           <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
+            Currently, I'm developing apps using popular technologies such as
+            React.js & Node.js. I'm also responsible for establishing CI/CD
+            pipelines using tools like Jenkins & Docker.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -114,7 +128,21 @@ const Experience = props => {
           <h4 className="vertical-timeline-element-subtitle">
             CSUN Distance Learning Center
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            I created
+            <a
+              href="https://github.com/novellito/Tseng-Utilities"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="dl-apps"
+            >
+              {' '}
+              two apps{' '}
+            </a>
+            that simplified our workflow. I also facilitated one on one
+            trainings with professors regarding school software and conducted qa
+            checks on our sites for accessibility.
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -125,18 +153,31 @@ const Experience = props => {
           <h4 className="vertical-timeline-element-subtitle">
             CSUN Career Center
           </h4>
-          <p>User Experience, Visual Design</p>
+          <p>
+            I created content for my university's career center using various
+            web technologies and also assisted our graphic designers in planning
+            layouts for our sites.
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           date="March 2014 - April 2017"
           icon={<img src={lees} alt="" className="lees" />}
         >
-          <h3 className="vertical-timeline-element-title">Store Supervisor</h3>
+          <h3 className="vertical-timeline-element-title">
+            Lees Sandwiches | Store Supervisor
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Lake Balboa, CA
           </h4>
-          <p>Strategy, Social Media</p>
+          <p>
+            My day to day at this restaurant consisted of providing excellent
+            customer service, training & supervising employees and most
+            importantly making delicious banh mi sandwiches{' '}
+            <span role="img" aria-label="yummy emoji">
+              😋.
+            </span>
+          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </Wrapper>

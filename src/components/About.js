@@ -117,13 +117,11 @@ const About = props => {
           <div className="right wow fadeInRight">
             <h3>About Me</h3>
             <p>
-              I'm an undergraduate student studying computer science at
-              California State University Northridge, specializing in web
-              engineering. I'm a former web developer for my university's Career
-              Center and currently a technical support specialist for our
-              Distance Learning Center. Outside the world of programming, I
-              enjoy playing basketball, listening to music, and growing my
-              sneaker collection.
+              I’m a California State University Northridge graduate with a
+              degree in computer science. I currently work at NBCUniversal as a
+              software developer and was a former web developer for my
+              university. Outside the world of programming, I enjoy playing
+              basketball, listening to music, and growing my sneaker collection.
             </p>
             <div className="personalLinks ">
               <AboutLinks />

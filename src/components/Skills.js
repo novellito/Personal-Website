@@ -117,6 +117,7 @@ const Skills = props => {
           <img src={vscode} className="vscode" alt="vscode" />
           <img src={sel} className="selenium" alt="selenium" />
         </div>
+        <p>Some experience with: AWS, Kubernetes, Sketch</p>
         <Button
           btnColor={white}
           link={'/projects'}
