@@ -123,7 +123,6 @@ const Hero = () => {
               alt="Christian Trinidad"
               src={Me}
             />
-            <p>this is a test for ci/cd</p>
           </div>
         </div>
       </Container>
