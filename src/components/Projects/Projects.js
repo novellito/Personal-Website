@@ -84,6 +84,7 @@ const Projects = props => {
             techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
             projectName="CSUN-CS Planner"
             projLink="https://github.com/novellito/CSUN-MEAN-App"
+            live="https://mean-csun.herokuapp.com/"
             style={{ backgroundColor: '#D00D2D' }}
             imgSrc={csuncs}
             wow="wow fadeInLeft"
@@ -93,6 +94,7 @@ const Projects = props => {
             techProp={['MySQL', 'Express.js', 'React.js', 'Node.js']}
             projectName="Scramble Dash"
             projLink="https://github.com/novellito/scramble-dash"
+            live="https://scramble-dash.herokuapp.com/"
             imgSrc={scrambleDash}
             style={{ backgroundColor: '#36479e' }}
             wow="wow fadeInRight"
@@ -165,7 +167,8 @@ const Projects = props => {
             description={desc.webV1}
             techProp={['HTML', 'CSS', 'JQuery', 'Bootstrap']}
             projectName="Website v1"
-            projLink="http://novellito.github.io"
+            live="https://webv1.cntrinidad.me/"
+            projLink="https://github.com/novellito/novellito.github.io"
             style={{ backgroundColor: 'grey ' }}
             imgSrc={web1}
             wow="wow fadeInRight"
@@ -177,13 +180,14 @@ const Projects = props => {
             projLink="https://github.com/novellito/Personal-Website"
             style={{ backgroundColor: '#3b5f92 ' }}
             imgSrc={web2}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.webV3}
             techProp={['React.js', 'Styled Components']}
             projectName="Website v3"
-            projLink="https://www.cntrinidad.me/"
+            projLink="https://github.com/novellito/Personal-Website"
+            live="https://www.cntrinidad.me/"
             style={{ backgroundColor: '#76AFFF ' }}
             imgSrc={web3}
             wow="wow fadeInRight"

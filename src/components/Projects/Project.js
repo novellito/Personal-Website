@@ -89,9 +89,9 @@ const Project = props => {
       <Terminal />
       <div className="card">
         <a
-          href={props.projLink}
+          href={props.live ? props.live : props.projLink}
           target="_blank"
-          alt={'github link to ' + props.projectName}
+          alt={'link to ' + props.projectName}
           rel="noopener noreferrer"
           className="thumbnail"
           style={props.style}
