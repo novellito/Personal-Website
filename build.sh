@@ -1,3 +1,4 @@
+echo "Running shell script!"
 npm run build
 cd build
 touch _redirects
