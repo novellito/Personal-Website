@@ -1,4 +1,6 @@
 const descriptions = {
+  yasp:
+    'A boilerplate project made to help developers get up and running with apps that require authentication.',
   cloutCompanion:
     'Clout Companion is a profit & sales manager for resellers. It is also a platform with tools and guides to help aspiring resellers. In devleoping the app, I learned the importance of using a state manager such as Redux.',
   bobalish:
