@@ -144,7 +144,10 @@ const MiniNav = () => {
     <Nav>
       <div className="mobile-menu">
         <NavLinks miniNav />
-        <button onClick={() => handleClick()}>
+        <button
+          onClick={() => handleClick()}
+          aria-label="Hamburger mobile menu"
+        >
           <div className="line">
             <span />
             <span />

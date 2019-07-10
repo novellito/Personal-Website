@@ -31,8 +31,8 @@ const Wrapper = styled.footer`
     }
   }
   .love {
-    color: #1b0813;
-    /* color: ${white}; */
+    /* color: #1b0813; */
+    color: ${white};
     visibility: hidden;
     i {
       color: #ff78ae;
@@ -97,9 +97,9 @@ const Footer = props => {
           </a>
         </li>
       </ul>
-      <span className="love">
-        Made with <i className="fa fa-heart" />
-      </span>
+      <p className="love">
+        made with <i className="fa fa-heart" />
+      </p>
     </Wrapper>
   );
 };
