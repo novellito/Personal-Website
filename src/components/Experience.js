@@ -46,8 +46,6 @@ const Wrapper = styled.section`
     width: 100%;
   }
   .lees {
-    width: 30px;
-    height: 25px;
     position: relative;
     top: 5px;
   }

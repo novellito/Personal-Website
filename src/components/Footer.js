@@ -31,7 +31,8 @@ const Wrapper = styled.footer`
     }
   }
   .love {
-    color: ${white};
+    color: #1b0813;
+    /* color: ${white}; */
     visibility: hidden;
     i {
       color: #ff78ae;
@@ -56,6 +57,8 @@ const Footer = props => {
             href="https://twitter.com/novellit0"
             target="_blank"
             rel="noopener noreferrer"
+            alt="my twitter"
+            aria-label="my twitter"
           >
             <i className="fa fa-2x fa-twitter" />
           </a>
@@ -65,6 +68,8 @@ const Footer = props => {
             href="https://www.facebook.com/christian.n.trinidad"
             target="_blank"
             rel="noopener noreferrer"
+            alt="my facebook"
+            aria-label="my facebook"
           >
             <i className="fa fa-2x fa-facebook" />
           </a>
@@ -74,12 +79,20 @@ const Footer = props => {
             href="https://www.instagram.com/cnovellito/"
             target="_blank"
             rel="noopener noreferrer"
+            alt="my instagram"
+            aria-label="my instagram"
           >
             <i className="fa fa-2x fa-instagram" />
           </a>
         </li>
         <li>
-          <a href={snapcode} target="_blank" rel="noopener noreferrer">
+          <a
+            href={snapcode}
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="my snapchat"
+            aria-label="my snapchat"
+          >
             <i className="fa fa-2x fa-snapchat" />
           </a>
         </li>

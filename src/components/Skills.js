@@ -58,7 +58,7 @@ const Wrapper = styled.section`
         height: 70px;
       }
       &.selenium {
-        width: 120px;
+        /* width: 120px; */
       }
     }
   }
