@@ -57,9 +57,6 @@ const Wrapper = styled.section`
       &.vscode {
         height: 70px;
       }
-      &.selenium {
-        /* width: 120px; */
-      }
     }
   }
   @media screen and (min-width: 1120px) {
