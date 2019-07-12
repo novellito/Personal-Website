@@ -1,4 +1,6 @@
 const descriptions = {
+  poker:
+    'An app used to help determine how much players will pay the winners in a game of poker. ',
   yasp:
     'A boilerplate project made to help developers get up and running with apps that require authentication.',
   cloutCompanion:

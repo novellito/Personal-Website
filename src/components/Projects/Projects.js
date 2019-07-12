@@ -16,6 +16,7 @@ import chat from '../../assets/vueChat.png';
 import boba from '../../assets/bobalish.png';
 import cc from '../../assets/ccLogo.png';
 import yasp from '../../assets/yasp.png';
+import poker from '../../assets/PokerLogo.png';
 import Project from './Project';
 import desc from './Descriptions';
 import { useWow } from '../../utils/wowHook';
@@ -90,6 +91,15 @@ const Projects = props => {
             wow="wow fadeInLeft"
           />
           <Project
+            description={desc.poker}
+            techProp={['React.js', 'Styled Components']}
+            projectName="Poker Tracker"
+            projLink="https://github.com/novellito/Poker-payouts"
+            style={{ backgroundColor: '#51279b' }}
+            imgSrc={poker}
+            wow="wow fadeInRight"
+          />
+          <Project
             description={desc.csunCSPlanner}
             techProp={['MongoDb', 'Express.js', 'Angular', 'Node.js']}
             projectName="CSUN-CS Planner"
@@ -97,7 +107,7 @@ const Projects = props => {
             live="https://mean-csun.herokuapp.com/"
             style={{ backgroundColor: '#D00D2D' }}
             imgSrc={csuncs}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.scrambleDash}
@@ -107,7 +117,7 @@ const Projects = props => {
             live="https://scramble-dash.herokuapp.com/"
             imgSrc={scrambleDash}
             style={{ backgroundColor: '#36479e' }}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
           <Project
             description={desc.rtc}
@@ -116,7 +126,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/Real-Time-Captioning"
             style={{ backgroundColor: '#262626' }}
             imgSrc={rtc}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.noteroom}
@@ -125,7 +135,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/NoteRoom"
             style={{ backgroundColor: '#00a0ff' }}
             imgSrc={noteroom}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
 
           <Project
@@ -135,7 +145,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/Web-Engineering"
             style={{ backgroundColor: 'white' }}
             imgSrc={todo}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.vueChat}
@@ -144,7 +154,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/Web-Engineering/tree/master/chat-app"
             style={{ backgroundColor: '#1b1b1b' }}
             imgSrc={chat}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
           <Project
             description={desc.triniBot}
@@ -153,7 +163,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/TriniBot"
             style={{ backgroundColor: 'rgba(251,168,15,.65)' }}
             imgSrc={twitterBot}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.voitcha}
@@ -162,7 +172,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/CSUN-Accessibility-Competition-Project"
             style={{ backgroundColor: '#b94848' }}
             imgSrc={voitcha}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
           <Project
             description={desc.dlTech}
@@ -171,7 +181,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/Tseng-Utilities"
             style={{ backgroundColor: '#607d8b  ' }}
             imgSrc={dl}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.webV1}
@@ -181,7 +191,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/novellito.github.io"
             style={{ backgroundColor: 'grey ' }}
             imgSrc={web1}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
           <Project
             description={desc.webV2}
@@ -190,7 +200,7 @@ const Projects = props => {
             projLink="https://github.com/novellito/Personal-Website"
             style={{ backgroundColor: '#3b5f92 ' }}
             imgSrc={web2}
-            wow="wow fadeInRight"
+            wow="wow fadeInLeft"
           />
           <Project
             description={desc.webV3}
@@ -200,7 +210,7 @@ const Projects = props => {
             live="https://www.cntrinidad.me/"
             style={{ backgroundColor: '#76AFFF ' }}
             imgSrc={web3}
-            wow="wow fadeInLeft"
+            wow="wow fadeInRight"
           />
         </div>
       </div>

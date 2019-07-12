@@ -9,7 +9,7 @@ import Button from './DefaultBtn';
 import me1 from '../assets/surface.png';
 import me2 from '../assets/xtian.jpg';
 import me3 from '../assets/grad.jpg';
-import resume from '../assets/christianTrinidad_Resume2018.pdf';
+import resume from '../assets/christianTrinidad_Resume.pdf';
 import { useWow } from '../utils/wowHook';
 
 const Wrapper = styled.section`
