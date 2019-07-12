@@ -28,7 +28,7 @@ const AboutLinks = () => (
       />
     </a>
     <a
-      href="https://www.linkedin.com/in/christian-trinidad07/"
+      href="https://www.linkedin.com/in/cntrinidad/"
       alt="my linked in"
       target="_blank"
       rel="noopener noreferrer"
