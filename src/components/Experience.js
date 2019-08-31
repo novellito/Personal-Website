@@ -47,6 +47,7 @@ const Wrapper = styled.section`
   }
   .lees {
     position: relative;
+    width: 35px;
     top: 5px;
   }
   .dl-apps {
