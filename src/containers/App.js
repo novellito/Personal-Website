@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import Navbar from '../components/Nav/Navbar';
-import MiniNav from '../components/Nav/MiniNav';
-import Footer from '../components/Footer';
-import Root from './Root';
-import Projects from '../components/Projects/Projects';
+import styled from 'styled-components';
+import wip from '../assets/wip.svg';
+import resume from '../assets/christianTrinidad_Resume.pdf';
+
+const Wrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .text {
+    padding: 0 40px;
+  }
+`;
 
 class App extends Component {
   render() {
     return (
-      <>
-        <MiniNav />
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Root} />
-          <Route exact path="/projects" component={Projects} />
-        </Switch>
-        <Footer />
-      </>
+      <Wrapper>
+        <div className="text">
+          <h1>Hi there! 👋 </h1>
+          <p>
+            My site is being updated but you can still find my latest résumé{' '}
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              here
+            </a>
+          </p>
+        </div>
+        <img className="wip" alt="site is being updated" src={wip} />
+      </Wrapper>
     );
   }
 }
