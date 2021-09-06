@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
+    `gatsby-plugin-emotion`,
     {
       resolve: 'gatsby-plugin-google-analytics', // TODO: figure out how this works
       options: {

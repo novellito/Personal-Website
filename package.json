@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "autoprefixer": "^10.3.4",
     "babel-plugin-styled-components": "^1.13.2",
     "gatsby": "^3.13.0",
     "gatsby-plugin-google-analytics": "^3.13.0",
@@ -25,6 +26,13 @@
     "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "tailwindcss": "^2.2.10"
+  },
+  "devDependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "gatsby-plugin-emotion": "^6.13.0",
+    "twin.macro": "^2.7.0"
   }
 }
