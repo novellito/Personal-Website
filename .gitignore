@@ -8,3 +8,5 @@ node_modules
 .vscode
 .DS_Store
 .env
+# Local Netlify folder
+.netlify
