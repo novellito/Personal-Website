@@ -3,7 +3,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { withRouter } from 'react-router-dom';
 import resume from '../../assets/christianTrinidad_Resume.pdf';
 
-const NavLinks = props => {
+const NavLinks = (props) => {
   const { pathname } = props.location;
   useEffect(() => {
     // We do not call the setColor function for the mobile nav since it is
@@ -15,13 +15,13 @@ const NavLinks = props => {
       <ul>
         {pathname === '/projects' ? (
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/original">Home</Link>
           </li>
         ) : (
           ''
         )}
         <li>
-          <Link to="/#aboutSection">About</Link>
+          <Link to="/original/#aboutSection">About</Link>
         </li>
         <li>
           <a href={resume} target="_blank" rel="noopener noreferrer">
@@ -29,7 +29,7 @@ const NavLinks = props => {
           </a>
         </li>
         <li>
-          <Link to="/#skillSection">Skills</Link>
+          <Link to="/original/#skillSection">Skills</Link>
         </li>
         {pathname !== '/projects' ? (
           <li>

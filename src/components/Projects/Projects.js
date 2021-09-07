@@ -20,6 +20,8 @@ import poker from '../../assets/PokerLogo.png';
 import Project from './Project';
 import desc from './Descriptions';
 import { useWow } from '../../utils/wowHook';
+import Navbar from '../Nav/Navbar';
+import MiniNav from '../Nav/MiniNav';
 
 const Wrapper = styled.section`
   margin-top: 40px;
@@ -56,10 +58,12 @@ const Wrapper = styled.section`
     margin-top: 40px;
   }
 `;
-const Projects = props => {
+const Projects = (props) => {
   useWow();
   return (
     <Wrapper>
+      <MiniNav />
+      <Navbar />
       <div id="projects">
         <h1>Projects</h1>
         <div className="row-cont">
