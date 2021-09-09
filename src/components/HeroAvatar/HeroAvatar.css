@@ -1,13 +1,18 @@
 #eyeb {
-  transform: translateY(-9px);
+  transform: translateY(-5px);
   animation: eyeb 5s linear infinite;
+}
+
+#g106,
+#g110 {
+  transform: translateY(18px);
 }
 
 @keyframes eyeb {
   0% {
-    transform: translateY(-10);
-    -ms-transform: translateY(-10);
-    -moz-transform: translateY(-10);
+    transform: translateY(-5);
+    -ms-transform: translateY(-5);
+    -moz-transform: translateY(-5);
   }
 
   25% {
@@ -304,4 +309,9 @@
   100% {
     transform: scale(0.96);
   }
+}
+
+#g80 {
+  transform: translate(0, 30px);
+  /* transform: translate(0, 8px); */
 }
