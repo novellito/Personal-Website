@@ -24,7 +24,7 @@ const AboutMeConent = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 250px 2fr;
   }
 
   .carousel-root {
@@ -75,7 +75,7 @@ const AboutMe = () => {
         <div className="about-text">
           <h1 tw="hidden md:block text-left">Who Am I?</h1>
           <p tw="text-center md:text-left">
-            I'm a Software Engineer with 4 years of experience developing web
+            I'm a Software Engineer with 3.5 years of experience developing web
             applications. I received my computer science degree from California
             State University Northridge. Outside the world of programming, I
             enjoy working out, eating, and growing my keyboard collection.
