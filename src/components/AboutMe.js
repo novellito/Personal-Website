@@ -36,10 +36,9 @@ const AboutMe = () => {
         <div tw="text-center">
           <h1 tw="text-center md:hidden">Who Am I?</h1>
           <StaticImage
-            src="./xtian.jpg"
+            src="../images/xtian.jpg"
             alt="picture of me"
-            // width={200}
-            // height={200}
+            placeholder="blurred"
           />
         </div>
         <div className="about-text">
