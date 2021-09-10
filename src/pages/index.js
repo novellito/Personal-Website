@@ -1,6 +1,8 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import AboutMe from '../components/AboutMe';
 import '../components/reset.css';
+import Experience from '../components/Experience';
 
 /*
 keeping this for future reference on how to use styled components or tailwind
@@ -18,6 +20,8 @@ const Button = tw.button`
 const IndexPage = () => (
   <div>
     <Hero />
+    <AboutMe />
+    <Experience />
   </div>
 );
 
