@@ -8,7 +8,7 @@ function HeroAvatar(props) {
     text: '#343434',
     dark: '#000000',
     secondaryText: '#7F8DAA',
-    accentColor: '#E3405F',
+    accentColor: '#60A5FA', // ! need to put this into constants file
     accentBright: '#FC1056',
     projectCard: '#DCE4F2',
     skinColor: '#F7B799',
