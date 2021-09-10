@@ -30,6 +30,8 @@
     "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-responsive-carousel": "^3.2.21",
+    "react-vertical-timeline-component": "^3.3.3",
     "styled-components": "^5.3.1",
     "tailwindcss": "^2.2.10"
   },
