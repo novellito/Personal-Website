@@ -12,7 +12,7 @@ const primaryTextColor = 'white';
 const white = 'white';
 
 const Wrapper = styled.section`
-  padding: 30px 70px;
+  padding: 30px 20px;
   h1 {
     color: ${primaryTextColor};
     font-size: 1.75em;
@@ -44,6 +44,16 @@ const Wrapper = styled.section`
       transition: 0.3s;
     }
   }
+
+  .vertical-timeline-element-content {
+    background-color: #282a36;
+    color: white;
+    box-shadow: 0 3px 0 #6272a4;
+  }
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid #6272a4;
+  }
+
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns
@@ -60,7 +70,6 @@ const Experience = () => {
       <h1 tw="text-center">Experience</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
           date="July 2018 - present"
           icon={
             <StaticImage
@@ -81,7 +90,6 @@ const Experience = () => {
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
           date="April 2017 - May 2018"
           icon={
             <StaticImage
@@ -114,7 +122,6 @@ const Experience = () => {
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
           date="April 2017 - July 2017"
           icon={
             <StaticImage
