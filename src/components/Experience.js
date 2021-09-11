@@ -7,7 +7,6 @@ import {
 import 'react-vertical-timeline-component/style.min.css';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const blueSecondary = 'blue';
 const primaryTextColor = 'white';
 const white = 'white';
 
@@ -37,8 +36,6 @@ const Wrapper = styled.section`
   }
 
   .dl-apps {
-    text-decoration: none;
-    color: ${blueSecondary};
     &:hover {
       color: #82b1ff96;
       transition: 0.3s;
@@ -53,7 +50,9 @@ const Wrapper = styled.section`
   .vertical-timeline-element-content-arrow {
     border-right: 7px solid #6272a4;
   }
-
+  .vertical-timeline-element-subtitle {
+    color: hsl(0deg 0% 80%);
+  }
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns
@@ -83,9 +82,9 @@ const Experience = () => {
           <h3 className="vertical-timeline-element-title">Software Engineer</h3>
           <h4 className="vertical-timeline-element-subtitle">NBCUniversal</h4>
           <p>
-            Currently, I'm developing apps using popular technologies such as
-            React.js & Node.js. I'm also responsible for establishing CI/CD
-            pipelines using tools like Jenkins & Docker.
+            Currently the frontend lead for an app used to manage contracts for
+            the Peacock streaming service. I've also been responsible for
+            handling deployments and managing our resources in AWS.
           </p>
         </VerticalTimelineElement>
 
@@ -108,6 +107,7 @@ const Experience = () => {
           <p>
             I created
             <a
+              tw="text-blue-500 no-underline"
               href="https://github.com/novellito/Tseng-Utilities"
               rel="noopener noreferrer"
               target="_blank"
@@ -116,7 +116,7 @@ const Experience = () => {
               {' '}
               two apps{' '}
             </a>
-            that simplified our workflow. I also facilitated one on one
+            that simplified faculty workflows. I also facilitated one on one
             trainings with professors regarding school software and conducted qa
             checks on our sites for accessibility.
           </p>
