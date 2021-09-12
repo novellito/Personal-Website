@@ -18,10 +18,10 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: './src/images/',
+        name: 'data',
+        path: './src/data/',
       },
-      __key: 'images',
+      __key: 'data',
     },
   ],
 };

@@ -2,7 +2,7 @@ import React from 'react';
 import tw, { styled } from 'twin.macro';
 import HeroAvatar from './HeroAvatar/HeroAvatar';
 import HeroLinks from './HeroAvatar/HeroLinks';
-
+import resume from '../data/christianTrinidad_Resume.pdf';
 const HeroSection = styled.section`
   ${tw`md:flex items-center`}
   ${tw`mx-auto`}
@@ -13,7 +13,8 @@ const HeroSection = styled.section`
     height: auto;
   }
   color: white;
-  .resmume-btn {
+  .resume-btn {
+    text-decoration: none;
     color: white;
     padding: 15px 15px;
     margin-top: 25px;
@@ -44,7 +45,14 @@ const Hero = () => {
         </p>
         <HeroLinks />
         <div className="btn-container" tw="md:flex">
-          <button className="resmume-btn">Résumé</button>
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-btn"
+          >
+            Résumé
+          </a>
         </div>
       </div>
       <div className="avatar" tw="md:flex-1">

@@ -236,11 +236,6 @@ export const Mongo = (props) => (
 export const Aws = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    height="800"
-    width="1200"
-    y="0"
-    x="0"
-    id="Layer_1"
     version="1.1"
     viewBox="-45.10065 -44.95 390.8723 269.7"
     width={props.width}

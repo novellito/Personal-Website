@@ -6,6 +6,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { StaticImage } from 'gatsby-plugin-image';
+import resume from '../data/christianTrinidad_Resume.pdf';
 
 const primaryTextColor = 'white';
 const white = 'white';
@@ -37,7 +38,8 @@ const Wrapper = styled.section`
     top: 7px;
   }
 
-  .dl-apps {
+  .dl-apps,
+  .resume-link {
     &:hover {
       color: #82b1ff96;
       transition: 0.3s;
@@ -148,8 +150,18 @@ const Experience = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
 
-      <p tw="text-white">
-        Please see resume for complete list of work experience
+      <p tw="text-white text-center">
+        Please see{' '}
+        <a
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="resume-link"
+          tw="text-blue-500 no-underline"
+        >
+          résumé
+        </a>{' '}
+        for more details.
       </p>
     </Wrapper>
   );
