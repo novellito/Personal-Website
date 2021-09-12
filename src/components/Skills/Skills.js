@@ -21,40 +21,38 @@ import {
   Jira,
 } from './Logos';
 
-const primaryTextColor = 'white';
-
-const SkillsContainer = styled.section`
-  padding: 30px 70px;
-  text-align: center;
-  .skills-card {
-    background-color: #282a36;
-    border-radius: 35px;
-    box-shadow: 0 3px 0 #6272a4;
-    color: ${primaryTextColor};
-    padding: 2.25em;
-    padding-bottom: 6em;
-    /* margin-top: -9em; */
-    p {
-      color: #5a5d7adb;
-      font-weight: 600;
-      &:nth-of-type(3) {
-        margin-bottom: 0;
-      }
-    }
-    h1 {
-      font-size: 2em;
-      color: black;
-      /* margin-top: 0; */
-    }
-
-    .row {
-    }
-  }
-`;
 const defaultDimensions = {
   width: '80px',
   height: '80px',
 };
+
+const SkillsContainer = styled.section`
+  padding: 20px 70px;
+  text-align: center;
+  .skills-card {
+    background-color: #282a36;
+    border-radius: 0.25em;
+    box-shadow: 0 3px 0 #6272a4;
+    padding: 1em;
+    p {
+      color: hsl(0deg 0% 80%);
+      font-weight: 600;
+      margin: 0;
+    }
+    h1 {
+      font-size: 2em;
+      color: white;
+    }
+
+    .row {
+      padding: 15px;
+      svg {
+        margin: 0.5rem;
+      }
+    }
+  }
+`;
+
 const Skills = () => {
   return (
     <SkillsContainer>
@@ -67,8 +65,6 @@ const Skills = () => {
           <Sass {...defaultDimensions} />
           <Python {...defaultDimensions} />
           <Java {...defaultDimensions} />
-
-          {/* TODO: terraform & selenium */}
         </div>
         <p>Frontend/Backend</p>
         <div className="row">
@@ -84,8 +80,8 @@ const Skills = () => {
         <p>DevOps</p>
         <div className="row">
           <Aws {...defaultDimensions} />
+          <Docker width="90px" height="90px" />
           <Terraform {...defaultDimensions} />
-          <Docker {...defaultDimensions} />
         </div>
 
         <p>Tools</p>
