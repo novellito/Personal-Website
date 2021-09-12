@@ -16,6 +16,7 @@ const Wrapper = styled.section`
     color: ${primaryTextColor};
     font-size: 1.75em;
   }
+
   /* Timeline vertical line */
   .vertical-timeline {
     &::before {
@@ -23,6 +24,7 @@ const Wrapper = styled.section`
       height: 70%;
     }
   }
+
   /* TODO: update on light theme */
   .vertical-timeline-element-icon {
     background: ${white};
@@ -47,12 +49,15 @@ const Wrapper = styled.section`
     color: white;
     box-shadow: 0 3px 0 #6272a4;
   }
+
   .vertical-timeline-element-content-arrow {
     border-right: 7px solid #6272a4;
   }
+
   .vertical-timeline-element-subtitle {
     color: hsl(0deg 0% 80%);
   }
+
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns
@@ -142,6 +147,10 @@ const Experience = () => {
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
+
+      <p tw="text-white">
+        Please see resume for complete list of work experience
+      </p>
     </Wrapper>
   );
 };
