@@ -151,7 +151,7 @@ const Experience = () => {
       </VerticalTimeline>
 
       <p tw="text-white text-center">
-        Please see{' '}
+        Please see my{' '}
         <a
           href={resume}
           target="_blank"
