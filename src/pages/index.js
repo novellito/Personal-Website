@@ -3,6 +3,9 @@ import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
 import '../components/reset.css';
 import Experience from '../components/Experience';
+import Skills from '../components/Skills/Skills';
+import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 /*
 keeping this for future reference on how to use styled components or tailwind
@@ -22,6 +25,9 @@ const IndexPage = () => (
     <Hero />
     <AboutMe />
     <Experience />
+    <Skills />
+    <Projects />
+    <Footer />
   </div>
 );
 
