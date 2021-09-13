@@ -14,6 +14,7 @@ const HeroSection = styled.section`
   }
   color: white;
   .resume-btn {
+    display: inline-block;
     text-decoration: none;
     color: white;
     padding: 15px 15px;
