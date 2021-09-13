@@ -21,17 +21,16 @@
     "@fortawesome/react-fontawesome": "^0.1.15",
     "autoprefixer": "^10.3.4",
     "babel-plugin-styled-components": "^1.13.2",
-    "gatsby": "^2.32.13",
-    "gatsby-plugin-google-analytics": "^2.11.0",
-    "gatsby-plugin-image": "^0.7.2",
-    "gatsby-plugin-sharp": "^2.14.4",
-    "gatsby-plugin-styled-components": "^3.10.0",
-    "gatsby-source-filesystem": "^2.11.1",
-    "gatsby-transformer-sharp": "^2.12.1",
+    "gatsby": "^3.13.0",
+    "gatsby-plugin-google-analytics": "^3.13.0",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-styled-components": "^4.13.0",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-responsive-carousel": "^3.2.21",
-    "react-reveal": "^1.2.2",
     "react-vertical-timeline-component": "^3.3.3",
     "styled-components": "^5.3.1",
     "tailwindcss": "^2.2.10"
@@ -39,7 +38,7 @@
   "devDependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "gatsby-plugin-emotion": "^5.4.0",
+    "gatsby-plugin-emotion": "^6.13.0",
     "twin.macro": "^2.7.0"
   }
 }
