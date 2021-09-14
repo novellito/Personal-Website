@@ -58,7 +58,7 @@ const GitLink = styled.a`
 
 const Projects = () => {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <h1>Projects</h1>
       <div className="cards-container" tw="relative">
         {projects.map((project, key) => (

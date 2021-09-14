@@ -41,7 +41,7 @@ const AboutMeConent = styled.div`
 `;
 const AboutMe = () => {
   return (
-    <AboutMeContainer>
+    <AboutMeContainer id="about">
       <AboutMeConent className="main">
         <div tw="text-center">
           <h1 tw="text-center md:hidden">Who Am I?</h1>

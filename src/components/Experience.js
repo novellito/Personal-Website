@@ -72,7 +72,7 @@ const Wrapper = styled.section`
 
 const Experience = () => {
   return (
-    <Wrapper>
+    <Wrapper id="experience">
       <h1 tw="text-center">Experience</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
