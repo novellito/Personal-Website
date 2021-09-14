@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import resume from '../../data/christianTrinidad_Resume.pdf';
 
 const NavLinks = () => {
