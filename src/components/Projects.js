@@ -2,6 +2,8 @@ import React from 'react';
 import tw, { styled } from 'twin.macro';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { Fade } from 'react-awesome-reveal';
+
 const projects = [
   {
     name: 'SnooOrganizer',
@@ -58,51 +60,53 @@ const GitLink = styled.a`
 
 const Projects = () => {
   return (
-    <ProjectsContainer id="projects">
-      <h1>Projects</h1>
-      <div className="cards-container" tw="relative">
-        {projects.map((project, key) => (
-          <div className="card" tw="rounded overflow-hidden " key={key}>
-            <div tw="px-6 pt-8 pb-4">
-              <div tw="font-bold text-xl mb-2 text-white">
-                <GitLink
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon className="themeToggler" icon={faGithub} />
-                </GitLink>
-                {project.name}
+    <Fade duration={1700} triggerOnce>
+      <ProjectsContainer id="projects">
+        <h1>Projects</h1>
+        <div className="cards-container" tw="relative">
+          {projects.map((project, key) => (
+            <div className="card" tw="rounded overflow-hidden " key={key}>
+              <div tw="px-6 pt-8 pb-4">
+                <div tw="font-bold text-xl mb-2 text-white">
+                  <GitLink
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon className="themeToggler" icon={faGithub} />
+                  </GitLink>
+                  {project.name}
+                </div>
+                <p tw="text-gray-300 text-base">{project.description}</p>
               </div>
-              <p tw="text-gray-300 text-base">{project.description}</p>
+              <div tw="px-6 pb-4">
+                {project.tech.map((techItem, techKey) => (
+                  <span
+                    key={techKey}
+                    tw="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+                  >
+                    {techItem}
+                  </span>
+                ))}
+              </div>
             </div>
-            <div tw="px-6 pb-4">
-              {project.tech.map((techItem, techKey) => (
-                <span
-                  key={techKey}
-                  tw="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-                >
-                  {techItem}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-      <p tw="text-white text-center">
-        More projects can be found on my{' '}
-        <a
-          href="https://github.com/novellito"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="resume-link"
-          tw="text-blue-500 no-underline"
-        >
-          github
-        </a>{' '}
-        page.
-      </p>
-    </ProjectsContainer>
+          ))}
+        </div>
+        <p tw="text-white text-center">
+          More projects can be found on my{' '}
+          <a
+            href="https://github.com/novellito"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="resume-link"
+            tw="text-blue-500 no-underline"
+          >
+            github
+          </a>{' '}
+          page.
+        </p>
+      </ProjectsContainer>
+    </Fade>
   );
 };
 

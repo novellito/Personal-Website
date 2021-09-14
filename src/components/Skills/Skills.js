@@ -20,6 +20,7 @@ import {
   Github,
   Jira,
 } from './Logos';
+import { Fade } from 'react-awesome-reveal';
 
 const defaultDimensions = {
   width: '80px',
@@ -55,43 +56,45 @@ const SkillsContainer = styled.section`
 
 const Skills = () => {
   return (
-    <SkillsContainer id="skills">
-      <div className="skills-card">
-        <h1>Skills</h1>
-        <p>Languages</p>
-        <div className="row">
-          <Javascript {...defaultDimensions} />
-          <Html {...defaultDimensions} />
-          <Sass {...defaultDimensions} />
-          <Python {...defaultDimensions} />
-          <Java {...defaultDimensions} />
-        </div>
-        <p>Frontend/Backend</p>
-        <div className="row">
-          <Angular {...defaultDimensions} />
-          <ReactLogo {...defaultDimensions} />
-          <Jquery {...defaultDimensions} />
-          <NodeJs {...defaultDimensions} />
-          <GraphQL {...defaultDimensions} />
-          <MySQL {...defaultDimensions} />
-          <Mongo {...defaultDimensions} />
-        </div>
+    <Fade duration={1700} triggerOnce>
+      <SkillsContainer id="skills">
+        <div className="skills-card">
+          <h1>Skills</h1>
+          <p>Languages</p>
+          <div className="row">
+            <Javascript {...defaultDimensions} />
+            <Html {...defaultDimensions} />
+            <Sass {...defaultDimensions} />
+            <Python {...defaultDimensions} />
+            <Java {...defaultDimensions} />
+          </div>
+          <p>Frontend/Backend</p>
+          <div className="row">
+            <Angular {...defaultDimensions} />
+            <ReactLogo {...defaultDimensions} />
+            <Jquery {...defaultDimensions} />
+            <NodeJs {...defaultDimensions} />
+            <GraphQL {...defaultDimensions} />
+            <MySQL {...defaultDimensions} />
+            <Mongo {...defaultDimensions} />
+          </div>
 
-        <p>DevOps</p>
-        <div className="row">
-          <Aws {...defaultDimensions} />
-          <Docker width="90px" height="90px" />
-          <Terraform {...defaultDimensions} />
-        </div>
+          <p>DevOps</p>
+          <div className="row">
+            <Aws {...defaultDimensions} />
+            <Docker width="90px" height="90px" />
+            <Terraform {...defaultDimensions} />
+          </div>
 
-        <p>Tools</p>
-        <div className="row">
-          <Github {...defaultDimensions} />
-          <Jira {...defaultDimensions} />
-          <Selenium {...defaultDimensions} />
+          <p>Tools</p>
+          <div className="row">
+            <Github {...defaultDimensions} />
+            <Jira {...defaultDimensions} />
+            <Selenium {...defaultDimensions} />
+          </div>
         </div>
-      </div>
-    </SkillsContainer>
+      </SkillsContainer>
+    </Fade>
   );
 };
 

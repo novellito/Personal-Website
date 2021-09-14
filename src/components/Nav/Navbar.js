@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavLinks from './NavLinks';
-
+import { Fade } from 'react-awesome-reveal';
 const duration = '.2s';
 const easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
 const Nav = styled.nav`
@@ -60,9 +60,11 @@ const Nav = styled.nav`
 
 const Navbar = () => {
   return (
-    <Nav>
-      <NavLinks />
-    </Nav>
+    <Fade direction="up" duration={1200} triggerOnce>
+      <Nav>
+        <NavLinks />
+      </Nav>
+    </Fade>
   );
 };
 
