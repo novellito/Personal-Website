@@ -19,7 +19,8 @@ const Nav = styled.nav`
     color: white;
     text-transform: uppercase;
     text-decoration: none;
-
+    position: relative;
+    padding-bottom: 8px;
     /* Underline effect */
     &:before,
     &:after {
