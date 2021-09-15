@@ -22,7 +22,7 @@ const Wrapper = styled.section`
   .vertical-timeline {
     &::before {
       top: unset;
-      height: 70%;
+      height: 75%;
     }
   }
 
@@ -94,7 +94,23 @@ const Experience = () => {
             handling deployments and managing our resources in AWS.
           </p>
         </VerticalTimelineElement>
-
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="August 2014 - May 2018"
+          icon={
+            <StaticImage
+              src="../images/csun.png"
+              alt="csun graduation"
+              placeholder="blurred"
+            />
+          }
+        >
+          <h3 className="vertical-timeline-element-title">
+            BS in Computer Science
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">CSU Northridge</h4>
+          <p>Deans List Fall 2014 - Spring 2018 • GPA: 3.6 (Cum Laude)</p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           date="April 2017 - May 2018"
           icon={
