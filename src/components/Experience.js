@@ -158,6 +158,7 @@ const Experience = () => {
           rel="noopener noreferrer"
           className="resume-link"
           tw="text-blue-500 no-underline"
+          aria-label="link to my resume"
         >
           résumé
         </a>{' '}

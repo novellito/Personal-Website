@@ -1,12 +1,14 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://www.yourdomain.tld',
+    siteUrl: 'https://www.cntrinidad.me',
     title: 'cntrinidad',
   },
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-image',
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-emotion`,
+    'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-plugin-google-analytics', // TODO: figure out how this works
       options: {

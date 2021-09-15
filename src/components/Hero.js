@@ -57,6 +57,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
+              aria-label="link to my resume"
             >
               Résumé
             </a>

@@ -20,7 +20,12 @@ const NavLinks = () => {
           <Link to="#projects">Projects</Link>
         </li>
         <li>
-          <a href={resume} target="_blank" rel="noopener noreferrer">
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="link to my resume"
+          >
             Résumé
           </a>
         </li>

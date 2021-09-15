@@ -11,6 +11,7 @@ const projects = [
     description:
       'Created to keep my React skills sharp since my current job mainly uses Angular. This project gave me exposure to Reddits API as well as the Serverless framework.',
     url: 'https://github.com/novellito/snooOrganizer',
+    aria: 'link to my project NnooOrganizer',
   },
   {
     name: 'The Next.js Starter',
@@ -18,6 +19,7 @@ const projects = [
     description:
       "A boilerplate Next.js project. There weren't any good starter projects at the time so I decided to create my own. The project curently has 15 stars and 5 forks on Github 😁. ",
     url: 'https://github.com/novellito/the-nextjs-starter',
+    aria: 'link to my project The Next.js Starter',
   },
   {
     name: 'Clout Companion',
@@ -25,6 +27,7 @@ const projects = [
     description:
       "A profit & sales manager for resellers on popular sites such as StockX or Grailed. It's also a platform with tools and guides to help aspiring resellers. This app uses Docker so that it's easy to setup.",
     url: 'https://github.com/novellito/Clout-Companion',
+    aria: 'link to my project Clout Companion',
   },
 ];
 const ProjectsContainer = styled.section`
@@ -72,6 +75,7 @@ const Projects = () => {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={project.aria}
                   >
                     <FontAwesomeIcon className="themeToggler" icon={faGithub} />
                   </GitLink>
@@ -100,6 +104,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="resume-link"
             tw="text-blue-500 no-underline"
+            aria-label="link github profile"
           >
             github
           </a>{' '}

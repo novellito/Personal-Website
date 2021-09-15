@@ -21,18 +21,21 @@ const links = [
     url: 'https://github.com/novellito',
     icon: faGithub,
     shadow: '0 5px 15px #333;',
+    aria: 'my github profile',
   },
   {
     color: 'hsl(199deg 85% 36%);',
     url: 'https://www.linkedin.com/in/cntrinidad/',
     icon: faLinkedinIn,
     shadow: '0 5px 15px #0e76a8;',
+    aria: 'my linkedin profile',
   },
   {
     color: 'hsl(349deg 75% 57%);',
     url: 'mailto:cntrinidad@gmail.com',
     icon: faEnvelope,
     shadow: '0 5px 15px #e4405f;',
+    aria: 'send an email to me',
   },
 ];
 
@@ -47,6 +50,7 @@ const HeroLinks = () => {
           shadow={link.shadow}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={link.aria}
         >
           <FontAwesomeIcon className="themeToggler" icon={link.icon} />
         </HeroAnchor>

@@ -6,6 +6,9 @@ import Experience from '../components/Experience';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Navbar from '../components/Nav/Navbar';
+import MiniNav from '../components/Nav/MiniNav';
+import { Helmet } from 'react-helmet';
 
 /*
 keeping this for future reference on how to use styled components or tailwind
@@ -21,14 +24,30 @@ const Button = tw.button`
 */
 
 const IndexPage = () => (
-  <div>
-    <Hero />
-    <AboutMe />
-    <Experience />
-    <Skills />
-    <Projects />
-    <Footer />
-  </div>
+  <>
+    <Helmet
+      htmlAttributes={{
+        lang: 'en',
+      }}
+    >
+      <meta charSet="utf-8" />
+      <meta
+        name="description"
+        content="Christian Trinidad's portfolio website."
+      />
+      <title>Christian Trinidad</title>
+    </Helmet>
+    <div>
+      <Navbar />
+      <MiniNav />
+      <Hero />
+      <AboutMe />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Footer />
+    </div>
+  </>
 );
 
 export default IndexPage;
