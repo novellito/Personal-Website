@@ -12,6 +12,7 @@ export const lightTheme = {
   footerBG: 'linear-gradient(20deg, #21d4fd 0%, #3321ff 100%)',
   mobileBGColor: '#1f1f1f',
   mobileHamburger: '#fff',
+  avatarShoes: '#000',
 };
 export const darkTheme = {
   body: '#1d1d1d',
@@ -27,4 +28,5 @@ export const darkTheme = {
   footerBG: '#282a36',
   mobileBGColor: '#fff',
   mobileHamburger: '#1f1f1f',
+  avatarShoes: '#dce4f2',
 };

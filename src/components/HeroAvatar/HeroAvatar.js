@@ -1,22 +1,14 @@
 import React from 'react';
 import './HeroAvatar.css';
 
-function HeroAvatar(props) {
+function HeroAvatar() {
   const theme = {
-    name: 'light',
-    body: '#FFFFFF',
-    text: '#343434',
     dark: '#000000',
-    secondaryText: '#7F8DAA',
-    accentColor: '#60A5FA', // ! need to put this into constants file
-    accentBright: '#FC1056',
-    projectCard: '#DCE4F2',
+    accentColor: '#60A5FA',
     skinColor: '#F7B799',
-    skinColor2: '#FCB696',
-    imageDark: '#dce4f2',
-    imageClothes: '#dce4f2',
-    avatarMisc: '#e9ecf2',
-    avatarShoes: '#ccd2e3',
+    laptop: '#dce4f2', // laptop
+    imageClothes: '#dce4f2', // legs
+    avatarMisc: '#e9ecf2', // thigh
   };
   return (
     <svg
@@ -315,9 +307,9 @@ function HeroAvatar(props) {
         </g>
         <g id="g192">
           <path
+            className="avatar-shoes"
             id="path190"
             d="M91.2,333.1c0,0,20.3-12,21.9-11.5c1.6,0.5,6.9,5.9,9.1,6.9c2.2,1,1.6,3.7,1.6,3.7l-3,9.3l-22.3-1.9          L91.2,333.1z"
-            fill={theme.avatarShoes}
           />
         </g>
         <g id="g196">
@@ -345,9 +337,9 @@ function HeroAvatar(props) {
             </g>
             <g id="g208">
               <path
-                id="path206"
+                id="avatar-laptop"
                 d="M212.5,289.7c0,3.8-3,6.8-6.8,6.8H37.3c-3.8,0-6.8-3-6.8-6.8V186.3c0-3.8,3-6.8,6.8-6.8h168.4              c3.8,0,6.8,3,6.8,6.8V289.7z"
-                fill={theme.imageDark}
+                fill={theme.laptop}
               />
             </g>
           </g>
@@ -421,8 +413,8 @@ function HeroAvatar(props) {
           <g id="g242">
             <path
               id="path240"
+              className="avatar-shoes"
               d="M150.9,347c-0.7-0.5,12.3-10.4,13.4-10.2c1.1,0.2,11.6,9.4,12.8,9.4c1.1,0,27.8,8.5,25.2,16.4l-25.5-0.6            l-19.9-1.1C156.8,360.9,155.3,350.7,150.9,347z"
-              fill={theme.avatarShoes}
             />
           </g>
           <g id="g246">

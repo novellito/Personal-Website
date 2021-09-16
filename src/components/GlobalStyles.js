@@ -98,4 +98,8 @@ footer {
         }
     }
 }
+
+.avatar-shoes {
+    fill: ${({ theme }) => theme.avatarShoes};
+}
 `;
