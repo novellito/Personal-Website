@@ -9,6 +9,7 @@ export const lightTheme = {
   experienceBG: '#e3f2fd',
   aboutMeParagraph: '#fff',
   skillsCardBG: '#fff',
+  footerBG: 'linear-gradient(20deg, #21d4fd 0%, #3321ff 100%)',
 };
 export const darkTheme = {
   body: '#1d1d1d',
@@ -21,4 +22,5 @@ export const darkTheme = {
   experienceCardBackground: '#282a36',
   experienceBG: '#1d1d1d',
   skillsCardBG: '#282a36',
+  footerBG: '#282a36',
 };

@@ -69,4 +69,9 @@ h1 {
     }
 }
 
+footer {
+    background: ${({ theme }) => theme.footerBG};
+    transition: all 0.50s linear;
+}
+
 `;
