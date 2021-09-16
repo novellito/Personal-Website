@@ -8,13 +8,9 @@ import 'react-vertical-timeline-component/style.min.css';
 import { StaticImage } from 'gatsby-plugin-image';
 import resume from '../data/christianTrinidad_Resume.pdf';
 
-const primaryTextColor = 'white';
-const white = 'white';
-
 const Wrapper = styled.section`
   padding: 30px 20px;
   h1 {
-    color: ${primaryTextColor};
     font-size: 1.75em;
   }
 
@@ -28,7 +24,7 @@ const Wrapper = styled.section`
 
   /* TODO: update on light theme */
   .vertical-timeline-element-icon {
-    background: ${white};
+    background: white;
     box-shadow: 0 0 0 4px #fff, inset 0 0px 0 rgba(0, 0, 0, 0.08),
       0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
@@ -47,8 +43,6 @@ const Wrapper = styled.section`
   }
 
   .vertical-timeline-element-content {
-    background-color: #282a36;
-    color: white;
     box-shadow: 0 3px 0 #6272a4;
   }
 
@@ -56,16 +50,12 @@ const Wrapper = styled.section`
     border-right: 7px solid #6272a4;
   }
 
-  .vertical-timeline-element-subtitle {
-    color: hsl(0deg 0% 80%);
-  }
-
   /* Override timeline styles to fix date position issues */
   @media only screen and (min-width: 1170px) {
     .vertical-timeline--two-columns
       .vertical-timeline-element-content
       .vertical-timeline-element-date {
-      color: white;
+      font-weight: bold;
     }
   }
 `;
@@ -166,7 +156,8 @@ const Experience = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
 
-      <p tw="text-white text-center">
+      <p tw=" text-center">
+        {/* <p tw="text-white text-center"> */}
         Please see my{' '}
         <a
           href={resume}

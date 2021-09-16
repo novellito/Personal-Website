@@ -16,7 +16,6 @@ const Nav = styled.nav`
   a {
     font-size: 1.2em;
     font-weight: 600;
-    color: white;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
@@ -31,7 +30,7 @@ const Nav = styled.nav`
       right: 0;
       bottom: 2px;
       height: 3px;
-      background-color: white;
+      background-color: #2563eb;
     }
     &:hover,
     &:focus {

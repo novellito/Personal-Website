@@ -10,7 +10,11 @@ import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
 import { Helmet } from 'react-helmet';
 import favicon from '../images/favicon.png';
-
+import { useDarkMode } from '../hooks/useDarkMode';
+import { GlobalStyles } from '../components/GlobalStyles';
+import ThemeToggler from '../components/ThemeToggler';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from '../constants/Theme';
 /*
 keeping this for future reference on how to use styled components or tailwind
 shorthand
@@ -24,32 +28,40 @@ const Button = tw.button`
 `;
 */
 
-const IndexPage = () => (
-  <>
-    <Helmet
-      htmlAttributes={{
-        lang: 'en',
-      }}
-      link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
-    >
-      <meta charSet="utf-8" />
-      <meta
-        name="description"
-        content="Christian Trinidad's portfolio website."
-      />
-      <title>Christian Trinidad</title>
-    </Helmet>
-    <div>
-      <Navbar />
-      <MiniNav />
-      <Hero />
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Footer />
-    </div>
-  </>
-);
+const IndexPage = () => {
+  const [theme, themeToggler, mountedComponent] = useDarkMode();
+
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  if (!mountedComponent) return <div />;
+  return (
+    <>
+      <Helmet
+        htmlAttributes={{
+          lang: 'en',
+        }}
+        link={[{ rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }]}
+      >
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="Christian Trinidad's portfolio website."
+        />
+        <title>Christian Trinidad</title>
+      </Helmet>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
+        <ThemeToggler toggleTheme={themeToggler} theme={theme} />
+        <Navbar />
+        <MiniNav />
+        <Hero />
+        <AboutMe />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Footer />
+      </ThemeProvider>
+    </>
+  );
+};
 
 export default IndexPage;

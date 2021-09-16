@@ -42,7 +42,6 @@ const SkillsContainer = styled.section`
     }
     h1 {
       font-size: 2em;
-      color: white;
     }
 
     .row {

@@ -17,7 +17,9 @@ const HeroSection = styled.section`
     max-width: 100%;
     height: auto;
   }
-  color: white;
+  p {
+    color: #616e7c;
+  }
   .resume-btn {
     display: inline-block;
     text-decoration: none;
@@ -34,9 +36,6 @@ const HeroSection = styled.section`
     &:hover {
       box-shadow: 0 5px 15px #3b82f6;
     }
-  }
-  p {
-    color: hsl(0deg 0% 55%);
   }
 `;
 

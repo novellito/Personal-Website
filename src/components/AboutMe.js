@@ -7,7 +7,6 @@ import { Fade } from 'react-awesome-reveal';
 const imageDimensions = '150px';
 
 const AboutMeContainer = styled.section`
-  background-color: #282a36;
   padding: 30px 70px;
   h1 {
     color: white;
@@ -16,7 +15,7 @@ const AboutMeContainer = styled.section`
 `;
 const AboutMeConent = styled.div`
   p {
-    color: hsl(0deg 0% 80%);
+    color: white;
     line-height: 1.4rem;
   }
 

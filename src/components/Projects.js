@@ -32,7 +32,6 @@ const projects = [
 ];
 const ProjectsContainer = styled.section`
   h1 {
-    color: white;
     text-align: center;
   }
   padding: 0 50px 30px;

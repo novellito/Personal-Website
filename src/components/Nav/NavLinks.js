@@ -5,7 +5,7 @@ import resume from '../../data/christianTrinidad_Resume.pdf';
 const NavLinks = () => {
   return (
     <>
-      <ul>
+      <ul id="navlinks">
         <li>
           <Link to="#about">About</Link>
         </li>
