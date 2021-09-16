@@ -5,7 +5,6 @@ const white = 'white';
 const mobileBGColor = 'rgb(31, 31, 31)';
 const Nav = styled.nav`
   .mobile-menu {
-    /* background-color: ${mobileBGColor}; */
     display: none;
     position: fixed;
     bottom: 15px;
@@ -13,7 +12,6 @@ const Nav = styled.nav`
     border-radius: 50%;
     z-index: 2;
     button {
-      /* background-color: ${mobileBGColor}; */
       height: 57px;
       width: 57px;
       position: fixed;
@@ -42,7 +40,6 @@ const Nav = styled.nav`
         text-align: right;
         margin: 15px 0px;
         a {
-          /* color: ${white}; */
           text-transform: uppercase;
           text-decoration: none;
           opacity: 0;
