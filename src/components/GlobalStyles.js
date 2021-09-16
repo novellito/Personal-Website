@@ -9,7 +9,6 @@ body, html, #___gatsby,
 h1 {
     color:${({ theme }) => theme.h1};
     transition: all 0.50s linear;
-
 }
 #navlinks {
     a {
@@ -30,13 +29,13 @@ h1 {
 }
 
 #experience {
-    background:${({ theme }) => theme.experienceBG};
+    background: ${({ theme }) => theme.experienceBG};
     transition: all 0.50s linear;
     p,
     .vertical-timeline-element-title,
     .vertical-timeline-element-subtitle,
     .vertical-timeline-element-date {
-        color:${({ theme }) => theme.paragraph};
+        color: ${({ theme }) => theme.paragraph};
         transition: all 0.50s linear;
     }
     
@@ -48,15 +47,26 @@ h1 {
 
 #skills {
  .skills-card {
-    background:${({ theme }) => theme.skillsCardBG};
+    background: ${({ theme }) => theme.skillsCardBG};
     p {
-        color:${({ theme }) => theme.paragraph}; 
+        color: ${({ theme }) => theme.paragraph}; 
         transition: all 0.50s linear;
     }
  }
 }
 
 #aws-logo {
-    fill: ${({ theme }) => theme.paragraph}
+    fill: ${({ theme }) => theme.paragraph};
 }
+
+#projects {
+    .card {
+        background: ${({ theme }) => theme.skillsCardBG};
+    }
+    .project-name, p {
+        color: ${({ theme }) => theme.paragraph}; 
+        transition: all 0.50s linear;
+    }
+}
+
 `;

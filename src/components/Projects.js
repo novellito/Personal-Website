@@ -42,6 +42,10 @@ const ProjectsContainer = styled.section`
       background-color: #282a36;
       box-shadow: 0 3px 0 #6272a4;
       margin: 20px;
+      .project-name {
+        display: inline-block;
+        margin: 0;
+      }
     }
     @media (min-width: 1024px) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -78,7 +82,7 @@ const Projects = () => {
                   >
                     <FontAwesomeIcon className="themeToggler" icon={faGithub} />
                   </GitLink>
-                  {project.name}
+                  <p className="project-name">{project.name}</p>
                 </div>
                 <p tw="text-gray-300 text-base">{project.description}</p>
               </div>
@@ -95,7 +99,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
-        <p tw="text-white text-center">
+        <p tw="text-center">
           More projects can be found on my{' '}
           <a
             href="https://github.com/novellito"
