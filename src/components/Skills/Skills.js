@@ -36,7 +36,6 @@ const SkillsContainer = styled.section`
     box-shadow: 0 3px 0 #6272a4;
     padding: 1em;
     p {
-      color: hsl(0deg 0% 80%);
       font-weight: 600;
       margin: 0;
     }

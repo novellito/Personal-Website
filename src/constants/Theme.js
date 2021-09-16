@@ -8,6 +8,7 @@ export const lightTheme = {
   experienceCardBackground: '#fff',
   experienceBG: '#e3f2fd',
   aboutMeParagraph: '#fff',
+  skillsCardBG: '#fff',
 };
 export const darkTheme = {
   body: '#1d1d1d',
@@ -19,4 +20,5 @@ export const darkTheme = {
   aboutMeParagraph: '#ffffffe8',
   experienceCardBackground: '#282a36',
   experienceBG: '#1d1d1d',
+  skillsCardBG: '#282a36',
 };

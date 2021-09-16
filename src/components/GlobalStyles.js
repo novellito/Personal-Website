@@ -39,10 +39,24 @@ h1 {
         color:${({ theme }) => theme.paragraph};
         transition: all 0.50s linear;
     }
+    
+    .vertical-timeline-element-content {
+        background-color: ${({ theme }) =>
+          theme.experienceCardBackground}!important;
+    }
 }
 
-.vertical-timeline-element-content {
-    background-color: ${({ theme }) =>
-      theme.experienceCardBackground}!important;
+#skills {
+ .skills-card {
+    background:${({ theme }) => theme.skillsCardBG};
+    p {
+        color:${({ theme }) => theme.paragraph}; 
+        transition: all 0.50s linear;
+    }
+ }
 }
-  `;
+
+#aws-logo {
+    fill: ${({ theme }) => theme.paragraph}
+}
+`;
