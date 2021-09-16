@@ -10,6 +10,8 @@ export const lightTheme = {
   aboutMeParagraph: '#fff',
   skillsCardBG: '#fff',
   footerBG: 'linear-gradient(20deg, #21d4fd 0%, #3321ff 100%)',
+  mobileBGColor: '#1f1f1f',
+  mobileHamburger: '#fff',
 };
 export const darkTheme = {
   body: '#1d1d1d',
@@ -23,4 +25,6 @@ export const darkTheme = {
   experienceBG: '#1d1d1d',
   skillsCardBG: '#282a36',
   footerBG: '#282a36',
+  mobileBGColor: '#fff',
+  mobileHamburger: '#1f1f1f',
 };

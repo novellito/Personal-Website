@@ -5,7 +5,7 @@ const white = 'white';
 const mobileBGColor = 'rgb(31, 31, 31)';
 const Nav = styled.nav`
   .mobile-menu {
-    background-color: ${mobileBGColor};
+    /* background-color: ${mobileBGColor}; */
     display: none;
     position: fixed;
     bottom: 15px;
@@ -13,7 +13,7 @@ const Nav = styled.nav`
     border-radius: 50%;
     z-index: 2;
     button {
-      background-color: ${mobileBGColor};
+      /* background-color: ${mobileBGColor}; */
       height: 57px;
       width: 57px;
       position: fixed;
@@ -42,7 +42,7 @@ const Nav = styled.nav`
         text-align: right;
         margin: 15px 0px;
         a {
-          color: ${white};
+          /* color: ${white}; */
           text-transform: uppercase;
           text-decoration: none;
           opacity: 0;
@@ -105,7 +105,6 @@ const Nav = styled.nav`
 
     /* x state when opened */
     &.open span {
-      background: red;
       &:nth-child(1) {
         top: 20px;
         left: 27px;
@@ -140,7 +139,7 @@ const handleClick = () => {
 
 const MiniNav = () => {
   return (
-    <Nav>
+    <Nav id="mobile-nav">
       <div className="mobile-menu">
         <NavLinks miniNav />
         <button

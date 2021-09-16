@@ -74,4 +74,28 @@ footer {
     transition: all 0.50s linear;
 }
 
+#mobile-nav {
+    .mobile-menu {
+        background: ${({ theme }) => theme.mobileBGColor};
+        
+        button, 
+        .circle { 
+            background: ${({ theme }) => theme.mobileBGColor};
+        }
+
+        ul li a {
+            color: ${({ theme }) => theme.mobileHamburger};
+        }
+    
+        .line {
+            span {
+                background: ${({ theme }) => theme.mobileHamburger};
+            }
+        }
+
+        &.open span {
+            background: #DC2626;
+        }
+    }
+}
 `;
