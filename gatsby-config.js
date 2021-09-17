@@ -32,5 +32,12 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        icon: `src/images/favicon.png`,
+      },
+    },
   ],
 };

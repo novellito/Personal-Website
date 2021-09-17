@@ -8,7 +8,6 @@ import Footer from '../components/Footer';
 import Navbar from '../components/Nav/Navbar';
 import MiniNav from '../components/Nav/MiniNav';
 import { Helmet } from 'react-helmet';
-import favicon from '../images/favicon.ico';
 import { useDarkMode } from '../hooks/useDarkMode';
 import { GlobalStyles } from '../components/GlobalStyles';
 import ThemeToggler from '../components/ThemeToggler';
@@ -38,7 +37,6 @@ const IndexPage = () => {
         htmlAttributes={{
           lang: 'en',
         }}
-        link={[{ rel: 'shortcut icon', href: `${favicon}` }]}
       >
         <meta charSet="utf-8" />
         <meta
