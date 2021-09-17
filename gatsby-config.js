@@ -25,5 +25,12 @@ module.exports = {
       },
       __key: 'data',
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Lato`],
+        display: 'swap',
+      },
+    },
   ],
 };
