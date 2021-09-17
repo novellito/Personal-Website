@@ -9,6 +9,8 @@ import { StaticImage } from 'gatsby-plugin-image';
 import resume from '../data/christianTrinidad_Resume.pdf';
 
 const Wrapper = styled.section`
+  overflow-x: hidden;
+
   padding: 30px 20px;
   h1 {
     font-size: 1.75em;
