@@ -82,17 +82,17 @@ footer {
         .circle { 
             background: ${({ theme }) => theme.mobileBGColor};
         }
-
+        
         ul li a {
             color: ${({ theme }) => theme.mobileHamburger};
         }
-    
+        
         .line {
             span {
                 background: ${({ theme }) => theme.mobileHamburger};
             }
         }
-
+        
         &.open span {
             background: #DC2626;
         }
@@ -101,5 +101,9 @@ footer {
 
 .avatar-shoes {
     fill: ${({ theme }) => theme.avatarShoes};
+}
+
+.theme-toggler {
+    background: ${({ theme }) => theme.mobileBGColor};
 }
 `;

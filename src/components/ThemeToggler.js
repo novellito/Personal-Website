@@ -1,19 +1,21 @@
 import React from 'react';
-import styled from 'styled-components';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { styled } from 'twin.macro';
 const ThemeTogglerWrapper = styled.div`
-  .themeToggler {
+  .theme-toggler {
     position: fixed;
-    left: 0;
-    bottom: 5%;
-    height: 50px;
+    left: 15px;
+    bottom: 14px;
+    height: 58px;
+    width: 58px;
     z-index: 1000;
     cursor: pointer;
     animation: fadeIn 0.3s;
-    transition: opacity 0.4s;
-    opacity: 0.5;
     outline: none;
+    padding: 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
   }
 
   .themeToggler:hover {
@@ -34,10 +36,10 @@ export const ThemeToggler = ({ toggleTheme, theme }) => {
   return (
     <ThemeTogglerWrapper>
       <FontAwesomeIcon
-        className="themeToggler"
+        className="theme-toggler"
         onClick={toggleTheme}
         size="7x"
-        color={theme === 'light' ? 'black' : 'white'}
+        color={theme === 'light' ? '#fff' : '#1f1f1f'}
         icon={theme === 'light' ? faMoon : faSun}
       />
     </ThemeTogglerWrapper>
