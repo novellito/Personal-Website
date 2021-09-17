@@ -106,7 +106,7 @@ const Projects = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="resume-link"
-            tw="text-blue-500 no-underline"
+            tw="text-blue-600 font-bold no-underline"
             aria-label="link github profile"
           >
             github

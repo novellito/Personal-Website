@@ -10,7 +10,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     'gatsby-plugin-robots-txt',
     {
-      resolve: 'gatsby-plugin-google-analytics', // TODO: figure out how this works
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-113712213-1',
       },

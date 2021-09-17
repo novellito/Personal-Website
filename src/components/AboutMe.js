@@ -7,7 +7,7 @@ import { Fade } from 'react-awesome-reveal';
 const imageDimensions = '150px';
 
 const AboutMeContainer = styled.section`
-  padding: 30px 70px;
+  padding: 45px 70px;
   h1 {
     color: white;
     margin: 0 0 20px;
@@ -76,7 +76,7 @@ const AboutMe = () => {
             <h1 tw="hidden md:block text-left">Who Am I?</h1>
             <p tw="text-center md:text-left">
               I'm a Software Engineer with 3.5 years of experience developing
-              web applications. I received my computer science degree from
+              web applications. I received my Computer Science degree from
               California State University Northridge. Outside the world of
               programming, I enjoy working out, eating, and growing my keyboard
               collection.
