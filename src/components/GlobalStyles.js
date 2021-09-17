@@ -21,7 +21,7 @@ body, html, #___gatsby,
     padding: 0px;
     transition: all 0.50s linear;
     background-color: ${({ theme }) => theme.body};
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 {
