@@ -15,7 +15,6 @@ const ThemeTogglerWrapper = styled.div`
     outline: none;
     padding: 10px;
     border-radius: 999px;
-    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
   }
 
   .themeToggler:hover {
@@ -36,6 +35,7 @@ export const ThemeToggler = ({ toggleTheme, theme }) => {
   return (
     <ThemeTogglerWrapper>
       <FontAwesomeIcon
+        tw="shadow-lg"
         className="theme-toggler"
         onClick={toggleTheme}
         size="7x"
