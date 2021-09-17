@@ -13,7 +13,6 @@ const NotFoundContainer = styled.main`
   }
 `;
 
-// markup
 const NotFoundPage = () => {
   return (
     <>

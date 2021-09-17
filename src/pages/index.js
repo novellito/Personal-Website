@@ -1,7 +1,6 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import AboutMe from '../components/AboutMe';
-import '../components/reset.css';
 import Experience from '../components/Experience';
 import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects';

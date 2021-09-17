@@ -10,9 +10,6 @@ const HeroSection = styled.section`
   ${tw`mx-auto`}
   ${tw`mt-8`}
   ${tw`max-w-screen-md md:max-w-screen-lg 2xl:max-w-screen-xl`}
-  /* TODO: make height more responsive */
-  /* max-height: 700px; */
-  /* height: 100vh; */
   .avatar svg {
     max-width: 100%;
     height: auto;

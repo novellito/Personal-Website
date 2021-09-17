@@ -1,7 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 body, html, #___gatsby,
 #gatsby-focus-wrapper {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
     transition: all 0.50s linear;
     background-color: ${({ theme }) => theme.body};
 }

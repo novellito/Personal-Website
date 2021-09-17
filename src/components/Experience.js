@@ -22,7 +22,6 @@ const Wrapper = styled.section`
     }
   }
 
-  /* TODO: update on light theme */
   .vertical-timeline-element-icon {
     background: white;
     box-shadow: 0 0 0 4px #fff, inset 0 0px 0 rgba(0, 0, 0, 0.08),
@@ -157,7 +156,6 @@ const Experience = () => {
       </VerticalTimeline>
 
       <p tw=" text-center">
-        {/* <p tw="text-white text-center"> */}
         Please see my{' '}
         <a
           href={resume}
