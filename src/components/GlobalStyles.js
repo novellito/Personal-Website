@@ -22,7 +22,7 @@ html,
   margin: 0px;
   padding: 0px;
   transition: all 0.5s linear;
-    background-color: ${({ theme }) => theme.body};
+  background-color: ${({ theme }) => theme.body};
 }
 
 h1 {
@@ -32,7 +32,7 @@ h1 {
 #navlinks {
   a {
     color:${({ theme }) => theme.navlinks};
-    transition: all 0.50s linear;
+    transition: all 0.5s linear;
   }
 }
 
@@ -66,7 +66,7 @@ h1 {
   .skills-card {
         background: ${({ theme }) => theme.skillsCardBG};
     p {
-        ${({ theme }) => theme.paragraph};
+        color: ${({ theme }) => theme.paragraph};
         transition: all 0.5s linear;
     }
   }
