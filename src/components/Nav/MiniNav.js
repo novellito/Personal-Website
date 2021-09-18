@@ -43,7 +43,7 @@ const Nav = styled.nav`
           text-transform: uppercase;
           text-decoration: none;
           opacity: 0;
-          transition: opacity 0.7s ease-in-out 0s;
+          transition: opacity 0.3s ease-in-out 0s;
         }
       }
     }

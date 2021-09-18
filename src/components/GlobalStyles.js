@@ -32,7 +32,6 @@ h1 {
 #navlinks {
   a {
     color:${({ theme }) => theme.navlinks};
-    transition: all 0.5s linear;
   }
 }
 
