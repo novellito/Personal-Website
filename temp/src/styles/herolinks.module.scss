@@ -1,0 +1,28 @@
+$transition: all 0.2s ease-in-out;
+$base-shadow: 0 5px 15px;
+
+.link {
+  &.github--link {
+    &:hover {
+      box-shadow: $base-shadow #333;
+      transition: $transition;
+    }
+    background-color: hsl(0deg 0% 20%);
+  }
+
+  &.linkedin--link {
+    &:hover {
+      box-shadow: $base-shadow #0e76a8;
+      transition: $transition;
+    }
+    background-color: hsl(199deg 85% 36%);
+  }
+
+  &.email--link {
+    &:hover {
+      box-shadow: $base-shadow #e4405f;
+      transition: $transition;
+    }
+    background-color: hsl(349deg 75% 57%);
+  }
+}

@@ -1,0 +1,19 @@
+// TODO: convert to tailwind & use neomorphism styling
+.resume-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  width: 140px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  background-color: #3b82f6;
+  /* ${tw`bg-blue-600 h-auto font-bold border-0`} */
+  &:hover {
+    box-shadow: 0 5px 15px #37383a;
+  }
+}
