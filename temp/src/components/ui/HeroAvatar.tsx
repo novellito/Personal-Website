@@ -1,6 +1,4 @@
-import React from 'react';
-import styles from './HeroAvatar.module.scss';
-
+import styles from '@/styles/HeroAvatar.module.scss';
 function HeroAvatar() {
   const theme = {
     dark: '#000000',

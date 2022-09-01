@@ -1,58 +1,57 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import styles from '@/styles/herolinks.module.scss';
+import { HeroLink } from '@/constants/types';
 
-const HeroAnchor = (props: any) => {
+const HeroAnchor = (props: HeroLink) => {
   return (
     <a
       className={`text-white text-xl leading-10 w-10 h-10 rounded-full inline-block mx-1 ${
         styles.link
-      } ${styles[`${props.class}`]}`}
-      href={props.href}
-      style={{ backgroundColor: props.bgColor }}
+      } ${styles[`${props.cssClass}`]}`}
+      href={props.url}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={props.aria}
     >
-      {props.children}
+      <FontAwesomeIcon icon={props.icon} />
     </a>
   );
 };
-const links = [
+
+const links: HeroLink[] = [
   {
     url: 'https://github.com/novellito',
     icon: faGithub,
-    class: 'github--link',
+    cssClass: 'github--link',
     aria: 'my github profile',
   },
   {
     url: 'https://www.linkedin.com/in/cntrinidad/',
     icon: faLinkedinIn,
-    class: 'linkedin--link',
+    cssClass: 'linkedin--link',
     aria: 'my linkedin profile',
   },
   {
     url: 'mailto:cntrinidad@gmail.com',
     icon: faEnvelope,
-    class: 'email--link',
+    cssClass: 'email--link',
     aria: 'send an email to me',
   },
 ];
 
-const HeroLinks = () => {
+const HeroLinks = ({ linkGap = 'gap-x-1' }) => {
   return (
-    <div className="md:flex">
+    <div className={`md:flex ${linkGap}`}>
       {links.map((link, key) => (
         <HeroAnchor
           key={key}
-          href={link.url}
-          class={link.class}
+          url={link.url}
+          cssClass={link.cssClass}
           aria={link.aria}
-        >
-          <FontAwesomeIcon icon={link.icon} />
-        </HeroAnchor>
+          icon={link.icon}
+        ></HeroAnchor>
       ))}
     </div>
   );

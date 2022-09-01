@@ -3,6 +3,49 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+@layer base {
+  h1 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #e3f2fd;
+  color: #343434;
+}
+
+.dark,
+.dark body {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 3px 0 #6272a4;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid #6272a4;
+}
+
+/* Override timeline styles to fix date position issues */
+@media only screen and (min-width: 1170px) {
+  .vertical-timeline--two-columns
+    .vertical-timeline-element-content
+    .vertical-timeline-element-date {
+    font-weight: bold;
+  }
 }
