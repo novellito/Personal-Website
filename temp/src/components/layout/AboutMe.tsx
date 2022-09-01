@@ -6,7 +6,7 @@ import styles from '@/styles/AboutMe.module.scss';
 
 const CarouselImage = (props: { src: string; alt: string }) => {
   return (
-    <div className={styles['img-container']}>
+    <div id="about" className={styles['img-container']}>
       <Image
         src={props.src}
         alt={props.alt}

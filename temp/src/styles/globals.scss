@@ -10,16 +10,6 @@
   }
 }
 
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 html,
 body {
   font-family: 'Lato', sans-serif;
@@ -31,6 +21,11 @@ body {
 .dark body {
   background-color: #1d1d1d;
   color: white;
+  #mobile-nav {
+    #navlinks {
+      color: #1d1d1d;
+    }
+  }
 }
 
 .vertical-timeline-element-content {

@@ -96,7 +96,7 @@ const Projects = () => {
             href="https://github.com/novellito"
             target="_blank"
             rel="noopener noreferrer"
-            className="resume-link text-blue-600 font-bold no-underline"
+            className="hover:text-[#82b1ff96] duration-200 text-blue-600 font-bold no-underline"
             aria-label="link to my github profile"
           >
             github
