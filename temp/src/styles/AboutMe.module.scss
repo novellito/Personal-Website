@@ -1,14 +1,4 @@
 #about__content {
-  // background: #282a36;
-  // background: linear-gradient(26deg, #21d4fd 0%, #3321ff 100%);
-  // background: linear-gradient(20deg, #21d4fd 0%, #3321ff 100%);
-  @media (min-width: 768px) {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: 250px 2fr;
-  }
-
   .img-container {
     span {
       border-radius: 50%;
