@@ -24,7 +24,7 @@ const timelineElementContents = [
           src={'/playstation.png'}
           alt={'Playstation logo'}
           layout="responsive"
-          width={50}
+          width={45}
           height={35}
           objectFit={'contain'}
         />
@@ -45,7 +45,7 @@ const timelineElementContents = [
     logo: (
       <div className={styles.nbc}>
         <Image
-          src={'/nbc.png'}
+          src={'/nbc.svg'}
           alt={'NBC Universal logo'}
           layout="responsive"
           width={50}
@@ -81,7 +81,7 @@ const timelineElementContents = [
           href="https://github.com/novellito/Tseng-Utilities"
           rel="noopener noreferrer"
           target="_blank"
-          className="hover:text-[#82b1ff96] duration-200 text-blue-500 no-underline"
+          className="hover:text-blue-600 duration-200 text-blue-800 dark:text-blue-400 no-underline"
         >
           {' '}
           two apps{' '}
@@ -110,8 +110,11 @@ const timelineElementContents = [
 
 const Experience = () => {
   return (
-    <section id={styles.experience} className="overflow-x-hidden px-4 pt-8">
-      <h1 className="text-center text-3xl my-0">Experience</h1>
+    <section
+      id="experience"
+      className={`overflow-x-hidden px-4 pt-8 ${styles.exp}`}
+    >
+      <h1 className="text-center text-3xl my-0 dark:text-white">Experience</h1>
       <VerticalTimeline className={styles['vertical-timeline']}>
         {timelineElementContents.map((elem, key) => {
           return (
@@ -129,12 +132,12 @@ const Experience = () => {
               date={elem.dates}
               icon={elem.logo}
             >
-              <h3 className="vertical-timeline-element-title text-lg font-bold text-[#1f2933] dark:text-white">
+              <h2 className="vertical-timeline-element-title text-lg font-bold text-[#1f2933] dark:text-white">
                 {elem.title}
-              </h3>
-              <h4 className="vertical-timeline-element-subtitle text-[#1f2933] dark:text-white">
+              </h2>
+              <h3 className="vertical-timeline-element-subtitle text-[#1f2933] dark:text-white">
                 {elem.subtitle}
-              </h4>
+              </h3>
               {elem.content}
             </VerticalTimelineElement>
           );
@@ -147,7 +150,7 @@ const Experience = () => {
           href={'/christianTrinidad_Resume.pdf'}
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-[#82b1ff96] duration-200 text-blue-600 font-bold no-underline resume-link"
+          className="hover:text-blue-600 duration-200 text-blue-800 dark:text-blue-400 font-bold no-underline resume-link"
           aria-label="link to my resume"
         >
           résumé

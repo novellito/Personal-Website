@@ -50,9 +50,7 @@ const Projects = () => {
         <div className="grid md:grid-cols-2">
           {projects.map((project, key) => (
             <div
-              // className="bg-[white] shadow-[0_3px_0_#6272a4] m-5 rounded overflow-hidden "
               className="bg-[white] dark:bg-[#282a36] shadow-[0_3px_0_#6272a4] m-5 rounded overflow-hidden "
-              // className="bg-[#282a36] shadow-[0_3px_0_#6272a4] m-5 rounded overflow-hidden "
               key={key}
             >
               <div className="px-6 pt-8 pb-4">
@@ -79,12 +77,12 @@ const Projects = () => {
               </div>
               <div className="px-6 pb-4">
                 {project.tech.map((techItem, techKey) => (
-                  <span
+                  <p
                     key={techKey}
-                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2 mb-2"
+                    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-900 mr-2 mb-2"
                   >
                     {techItem}
-                  </span>
+                  </p>
                 ))}
               </div>
             </div>
@@ -96,7 +94,7 @@ const Projects = () => {
             href="https://github.com/novellito"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-[#82b1ff96] duration-200 text-blue-600 font-bold no-underline"
+            className="hover:text-blue-600 duration-200 text-blue-800 dark:text-blue-400 font-bold no-underline"
             aria-label="link to my github profile"
           >
             github

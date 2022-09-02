@@ -1,5 +1,4 @@
 import { Fade } from 'react-awesome-reveal';
-import styles from '@/styles/Hero.module.scss';
 import HeroLinks from '@/components/ui/HeroLinks';
 import HeroAvatar from '@/components/ui/HeroAvatar';
 
@@ -18,7 +17,9 @@ const Hero = () => {
             href={'/christianTrinidad_Resume.pdf'}
             target="_blank"
             rel="noopener noreferrer"
-            className={`md:float-left ${styles['resume-btn']}`}
+            className={`rounded-lg transition-all ease-in-out duration-200 mt-6
+                        text-xl p-4 md:float-left w-36 bg-blue-700 hover:shadow-blue-600 
+                        hover:shadow-lg inline-block text-dev no-underline text-white cursor-pointer`}
             aria-label="link to my resume"
           >
             Résumé

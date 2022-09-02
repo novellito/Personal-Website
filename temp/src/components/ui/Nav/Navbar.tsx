@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 const Navbar = () => {
   return (
     <Fade duration={1700} triggerOnce>
-      <nav className="hidden md:block ">
+      <nav className="navbar hidden md:block ">
         <NavLinks />
       </nav>
     </Fade>

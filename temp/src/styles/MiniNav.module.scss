@@ -24,7 +24,7 @@ $mobileBottomRight: 15px;
     }
   }
   .mobileLinks {
-    color: white; // update for dark theme
+    color: white;
     list-style-type: none;
     margin: -3rem 0px;
     visibility: hidden;
@@ -38,10 +38,6 @@ $mobileBottomRight: 15px;
       text-align: right;
       margin: 10px 0px;
       display: block;
-      // color: #1f1f1f;
-      // &.dark {
-      //   color: #1f1f1f;
-      // }
       a {
         font-size: 1rem;
         text-transform: uppercase;
@@ -52,7 +48,6 @@ $mobileBottomRight: 15px;
     }
   }
   .circle {
-    // background-color: $mobileBGColor;
     z-index: 1;
     height: 57px;
     width: 57px;

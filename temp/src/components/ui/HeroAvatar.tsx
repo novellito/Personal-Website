@@ -1,4 +1,5 @@
 import styles from '@/styles/HeroAvatar.module.scss';
+
 function HeroAvatar() {
   const theme = {
     dark: '#000000',
@@ -354,13 +355,13 @@ function HeroAvatar() {
               transform="rotate(-45)"
             />
           </g>
-          <radialgradient
+          {/* <radialgradient
             gradientUnits="userSpaceOnUse"
             r="17.2316"
             cy="239.6875"
             cx="121.6441"
             id="logo1"
-          />
+          /> */}
         </g>
         <g id="g218" opacity="0.1">
           <polygon

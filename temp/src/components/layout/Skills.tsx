@@ -1,4 +1,5 @@
 import React from 'react';
+import { Fade } from 'react-awesome-reveal';
 import {
   Typescript,
   Html,
@@ -20,13 +21,16 @@ import {
   Jira,
   Figma,
 } from '@/components/ui/Logos';
-import { Fade } from 'react-awesome-reveal';
 
 const Skills = () => {
   return (
     <Fade duration={1700} triggerOnce>
       <section id="skills" className="py-6 px-8 md:px-16 text-center">
-        <div className="card bg-white dark:bg-[#282a36] shadow-[0_3px_0_#6272a4] p-6 rounded bg-[url('/blob_sm.svg')] md:bg-[url('/blob_md.svg')] lg:bg-[url('/blob_lg.svg')] bg-cover	bg-no-repeat	">
+        <div
+          className="card bg-white dark:bg-[#282a36] shadow-[0_3px_0_#6272a4] p-6 
+                        rounded bg-[url('/blob_sm.svg')] md:bg-[url('/blob_md.svg')] lg:bg-[url('/blob_lg.svg')] 
+                        bg-cover	bg-no-repeat"
+        >
           <h1 className="m-7">Skills</h1>
           <p className="text-lg">Languages</p>
           <div className="p-4 flex justify-center gap-4">
