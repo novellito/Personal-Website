@@ -1,4 +1,10 @@
 #about__content {
+  @media (min-width: 768px) {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 250px 2fr;
+  }
   .img-container {
     span {
       border-radius: 50%;
