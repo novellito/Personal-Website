@@ -36,3 +36,4 @@ describe('Landing page', () => {
       .and('eq', 'rgb(29, 29, 29)');
   });
 });
+export {};
