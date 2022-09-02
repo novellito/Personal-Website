@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
@@ -29,6 +31,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/react-vertical-timeline-component": "^3.3.3",
     "autoprefixer": "^10.4.8",
+    "cypress": "^10.7.0",
     "eslint": "^8.23.0",
     "eslint-config-next": "^12.2.5",
     "next": "latest",
