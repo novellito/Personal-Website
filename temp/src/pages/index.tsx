@@ -10,7 +10,8 @@ import ThemeToggler from '@/components/ui/ThemeToggler';
 
 const Index = () => (
   <main>
-    <div className="bg-[url('/circuit.svg')]">
+    {/* weird spacing issue at the top is solved by p-[1px] */}
+    <div className="bg-[url('/circuit.svg')] p-[1px]">
       <Navbar />
       <MiniNav />
       <Hero />
