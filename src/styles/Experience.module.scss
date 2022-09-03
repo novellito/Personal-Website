@@ -1,0 +1,18 @@
+.exp {
+  /* removes timeline vertical line at the top & bottom*/
+  .vertical-timeline {
+    &::before {
+      top: unset;
+      height: 70%;
+    }
+  }
+
+  .nbc {
+    position: relative;
+    top: 5px;
+  }
+
+  .dates {
+    font-weight: bold;
+  }
+}
