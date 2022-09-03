@@ -14,8 +14,7 @@ function App({ Component, pageProps }: AppProps) {
         title="Christian Trinidad"
         description="Christian Trinidad's portfolio website."
       />
-      {/* uncomment when live */}
-      {/* <Script
+      <Script
         src="https://www.googletagmanager.com/gtag/js?id=UA-113712213-1"
         strategy="afterInteractive"
       />
@@ -27,7 +26,7 @@ function App({ Component, pageProps }: AppProps) {
 
           gtag('config', 'UA-113712213-1');
         `}
-      </Script> */}
+      </Script>
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
       </ThemeProvider>{' '}
